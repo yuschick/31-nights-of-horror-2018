@@ -1,15 +1,15 @@
-[![31 Nights of Horror 2018](https://github.com/yuschick/31-Nights-of-Horror-2018/raw/master/header.jpg)](http://yuschick.github.io/31-Nights-of-Horror-2018/)
+[![31 Nights of Horror 2018](https://github.com/yuschick/31-Nights-of-Horror-2018/raw/master/materials/header.jpg)](http://yuschick.github.io/31-Nights-of-Horror-2018/)
 
 It's no secret that I have an incredible love for horror movies. The **31 Nights of Horror** series began in 2015 as a way to work on a fun design and coding project while creating a resource for others who are unsure where to turn for good holiday horror.
 
 ### 2018 Summary
-Need horror movie recommendations this October? Check out my fourth annual 31 Nights of Horror calendar. More details coming soon.
+Need horror movie recommendations this October? Check out my fourth annual 31 Nights of Horror calendar. Enjoy the month-long themes like *Monday of the Dead* and *True Story Tuesday*, inline movie trailers, and links to streaming services where you can watch now; many for free! I have an incredible love for horror movies and I look forward to building this project every year. **Happy Halloween!**
 
 ### All Calendars
-[View the 2015 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2015/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2015)  
-[View the 2016 Calendar](http://www.danyuschick.com/31-nights-of-horror/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2016)  
-[View the 2017 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2017) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2017)  
-[View the 2018 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2018) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2018)  
+[View the 2015 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2015/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2015)
+[View the 2016 Calendar](http://www.danyuschick.com/31-nights-of-horror/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2016)
+[View the 2017 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2017) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2017)
+[View the 2018 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2018) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2018)
 
 ### Rules
 - No movies can repeat across calendars
@@ -18,10 +18,43 @@ Need horror movie recommendations this October? Check out my fourth annual 31 Ni
 - Major release cutoff date: August 2018
 
 ### Movies
-Coming this October
+- Dawn of the Dead
+- The Amityville Horror
+- Child's Play
+- Maniac
+- Clown
+- Tragedy Girls
+- The House at the End of Time
+- Zombie
+- The Girl Next Door
+- Puppet Master
+- The Void
+- It
+- The House by the Cemetery
+- The Barn
+- The Girl with all the Gifts
+- Wolf Creek
+- Dead Silence
+- Pumpkinhead
+- Terrifier
+- The Beyond
+- Oujia: Origin of Evil
+- Train to Busan
+- Veronica
+- Annabelle Creation
+- Ghost Stories
+- Hell House LLC
+- Hereditary
+- A Quiet Place
+- 28 Days Later
+- The Strangers
+- Incident in a Ghostland
 
 ## Tech Notes
-Coming Soon
+- React + Prop Types
+- Styled Components
+- Firebase
+- The Movie DB
 
 ## Contact:
 [@Yuschick](http://www.twitter.com/yuschick)
