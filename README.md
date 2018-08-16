@@ -54,6 +54,7 @@ Need horror movie recommendations this October? Check out my fourth annual 31 Ni
 - React + Prop Types
 - Styled Components
 - Firebase
+- ESLint
 - The Movie DB
 
 ## Contact:

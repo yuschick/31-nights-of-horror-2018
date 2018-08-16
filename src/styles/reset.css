@@ -75,7 +75,9 @@ html {
 }
 
 body {
-  background: #111;
+  background: url("../images/background.jpg") no-repeat fixed center #111;
+  background-size: cover;
+  font-family: "Cabin", sans-serif;
   font-size: 16px;
   line-height: 1.75;
 }

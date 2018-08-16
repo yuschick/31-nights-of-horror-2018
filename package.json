@@ -3,14 +3,24 @@
   "version": "0.1.0",
   "author": "Daniel Yuschick",
   "homepage": "https://yuschick.github.io/31-Nights-of-Horror-2018/",
-  "keywords": ["react", "styled-components", "firebase", "horror movies", "halloween", "31 nights of horror", "2018"],
+  "keywords": [
+    "react",
+    "styled-components",
+    "firebase",
+    "horror movies",
+    "halloween",
+    "31 nights of horror",
+    "2018"
+  ],
   "description": "31 Nights of Horror is an October movie calendar giving you more than autumn chills for all 31 nights. Watch movie trailers, enjoy month-long themes, and see where you can stream the movies now!",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/npm/cli.gitgit@github.com:yuschick/31-Nights-of-Horror-2018.git"
+    "type": "git",
+    "url": "https://github.com/npm/cli.gitgit@github.com:yuschick/31-Nights-of-Horror-2018.git"
   },
   "dependencies": {
+    "eslint-plugin-react": "^7.11.1",
     "firebase": "^5.3.1",
+    "polished": "^1.9.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -25,5 +35,13 @@
   },
   "browserslist": [
     ">0.25%"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
 }
