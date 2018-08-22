@@ -8,13 +8,11 @@ export const Days = Immutable.from({
   FRIDAY: 'Facepaint Friday',
   SATURDAY: 'Saturday',
   SUNDAY: 'Sunday',
-  HALLOWEEN: '🎃 Happy Halloween 🎃',
+  HALLOWEEN: '🎃 Happy Halloween 🎃'
 });
 
 export const Find = (source, field, target) => {
   return source.find(item => {
-    if (item[field] === target) {
-      return item;
-    }
+    return item[field] === target;
   });
-}
+};

@@ -4,12 +4,12 @@ import {lighten} from 'polished';
 import {colors, size, space, fonts} from '../../styles/theme';
 import { Firebase } from '../../api';
 
-const NavList = styled.ul `
+const NavList = styled.ul`
   display: flex;
   height: calc(${size.headerHeight} - calc(${space.default} * 2));
 `;
 
-const NavItem = styled.li `
+const NavItem = styled.li`
   align-self: center;
   color: ${lighten(0.1, colors.tertiary)};
   font: 1.5rem/1 ${fonts.raleway};

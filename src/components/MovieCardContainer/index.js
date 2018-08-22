@@ -9,7 +9,7 @@ import MovieOverview from '../MovieOverview';
 import MovieServices from '../MovieServices';
 import MovieScore from '../MovieScore';
 
-const Container = styled.section `
+const Container = styled.section`
   background: ${colors.black};
   box-shadow: 0px 0px 25px 20px rgba(0,0,0,0.75);
   color: #fff;
@@ -18,14 +18,14 @@ const Container = styled.section `
   z-index: 2;
 `;
 
-const CardContentContainer = styled.div `
+const CardContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 `;
 
-const CardFooter = styled.footer `
+const CardFooter = styled.footer`
   align-items: center;
   display: flex;
   justify-content: space-between;

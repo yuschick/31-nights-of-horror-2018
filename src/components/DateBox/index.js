@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {colors, fonts} from '../../styles/theme';
 
-const DateBoxContainer = styled.div `
+const DateBoxContainer = styled.div`
   align-items: center;
   background: ${colors.tertiary};
   color: ${colors.white};

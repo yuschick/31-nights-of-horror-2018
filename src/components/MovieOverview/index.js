@@ -12,7 +12,7 @@ class MovieOverview extends Component {
   render() {
     return (
       <Overview>
-          {this.props.overview}
+        {this.props.overview}
       </Overview>
     );
   }

@@ -7,7 +7,8 @@ import { movies } from '../../data/movies';
 import MovieScreen from '../MovieScreen';
 
 class Calendar extends Component {
-  componentWillMount() {
+  constructor() {
+    super();
     Firebase.init();
   }
 

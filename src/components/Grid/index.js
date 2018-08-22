@@ -47,13 +47,13 @@ class Grid extends Component {
       <Cell dim={this.props.dim} span4col2row noFade key='cell-8-5' />,
       <Cell dim={this.props.dim} span3col slow delayLG key='cell-8-9' />,
       <Cell dim={this.props.dim} span2area noFade key='cell-8-12' />,
-      <Cell dim={this.props.dim} flash fast delayLGkey='cell-8-14' />,
+      <Cell dim={this.props.dim} flash fast delayLG key='cell-8-14' />,
       <Cell dim={this.props.dim} span2col hide delaySM key='cell-8-15' />,
       <Cell dim={this.props.dim} noFade key='cell-9-1' />,
       <Cell dim={this.props.dim} hide noFade key='cell-9-2' />,
       <Cell dim={this.props.dim} span3col noFade key='cell-9-9' />,
       <Cell dim={this.props.dim} hide noFade key='cell-9-14' />,
-      <Cell dim={this.props.dim} span2col noFade key='cell-9-15' />,
+      <Cell dim={this.props.dim} span2col noFade key='cell-9-15' />
     ]);
   }
 }

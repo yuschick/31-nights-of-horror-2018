@@ -35,7 +35,7 @@ class MovieScreen extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     GetMovieDetails(this.props.id).then((data) => {
       this.formatData(data);
     });
@@ -63,7 +63,7 @@ class MovieScreen extends Component {
         title: data.title || data.original_title,
         tagline: data.tagline,
         overview: data.overview,
-        release: release.release_date.substring(0,4),
+        release: release.release_date.substring(0, 4),
         rating: release.certification || 'NR',
         language: language.name,
         score: data.vote_average,
@@ -79,22 +79,21 @@ class MovieScreen extends Component {
   }
 
   render() {
-    return this.state.loading ?
-      <span>Loading</span>
-    :
-    (
-      <GridContainer
-        id={`movie-${this.props.date}`}
-        backdrop={this.props.backdrop}
+    return this.state.loading
+      ? <span>Loading</span>
+      : (
+        <GridContainer
+          id={`movie-${this.props.date}`}
+          backdrop={this.props.backdrop}
         >
-        <Grid
-          day={this.props.day}
-          date={this.props.date}
-          movie={this.state.movie}
-          dim={this.state.active}
-        />
-      </GridContainer>
-    );
+          <Grid
+            day={this.props.day}
+            date={this.props.date}
+            movie={this.state.movie}
+            dim={this.state.active}
+          />
+        </GridContainer>
+      );
   }
 }
 

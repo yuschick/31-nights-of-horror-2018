@@ -6,13 +6,13 @@ import CalendarIcon from '../../svg/calendar.svg';
 import LanguageIcon from '../../svg/language.svg';
 import MovieRating from '../MovieRating';
 
-const ListContainer = styled.ul `
+const ListContainer = styled.ul`
   align-items: center;
   display: flex;
   margin: calc(${space.vert} * 1.5) 0;
 `;
 
-const ListItem = styled.li `
+const ListItem = styled.li`
   align-items: center;
   display: flex;
   font: 1rem/1 ${fonts.raleway};
@@ -30,8 +30,7 @@ const Icon = styled
   })`
   display: block;
   height: 16px;
-  margin-right: calc(${space
-  .hori} / 2);
+  margin-right: calc(${space.hori} / 2);
   width: auto;
 `;
 

@@ -27,15 +27,15 @@ export const size = {
 };
 
 export const fonts = {
-  raleway: "'Raleway', sans-serif",
-  oswald: "'Oswald', sans-serif"
+  raleway: '"Raleway", sans-serif',
+  oswald: '"Oswald", sans-serif'
 };
 
 export const times = {
-  base: "5s",
-  delayXs: "1.15s",
-  delaySm: "2.25s",
-  delayMd: "3.15s",
-  delayLg: "4.3s",
-  delayXl: "6.65s"
+  base: '5s',
+  delayXs: '1.15s',
+  delaySm: '2.25s',
+  delayMd: '3.15s',
+  delayLg: '4.3s',
+  delayXl: '6.65s'
 };

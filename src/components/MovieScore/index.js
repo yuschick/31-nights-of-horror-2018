@@ -17,7 +17,7 @@ const SVGContainer = styled.svg.attrs({
 })``;
 
 const TrackPath = styled.path.attrs({
-  d: "M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831"
+  d: 'M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831'
 })`
   fill: none;
   stroke: ${colors.scoreTrack};
@@ -25,12 +25,12 @@ const TrackPath = styled.path.attrs({
 `;
 
 const ScorePath = styled.path.attrs({
-  d: "M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831",
+  d: 'M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831a 15.9155 15.9155 0 0 1 0 -31.831',
   strokeDasharray: '0, 100'
 })`
   animation: ${props => ShowScore(props.score)} 1.5s .5s ease forwards;
   fill: none;
-  stroke: ${props => props.score < 7 ? props.score < 5.7 ? colors.scoreBad : colors.scoreMid : colors.scoreHigh };
+  stroke: ${props => props.score < 7 ? props.score < 5.7 ? colors.scoreBad : colors.scoreMid : colors.scoreHigh};
   stroke-width: 3;
   stroke-linecap: butt;
 `;
@@ -55,7 +55,7 @@ class MovieScore extends Component {
             score={this.props.score}
           />
         </SVGContainer>
-        <ScoreText>{this.props.score.toString().length === 1 ? `${this.props.score}0`: this.props.score}</ScoreText>
+        <ScoreText>{this.props.score.toString().length === 1 ? `${this.props.score}0` : this.props.score}</ScoreText>
       </Container>
     );
   }

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {colors, fonts, space} from '../../styles/theme';
 
-const MovieTitle = styled.h2 `
+const MovieTitle = styled.h2`
   color: ${colors.white};
   font: 2.75rem/1 ${fonts.oswald};
   -webkit-text-fill-color: ${colors.white};
@@ -17,7 +17,7 @@ const MovieTitle = styled.h2 `
   text-transform: uppercase;
 `;
 
-const MovieTagLine = styled.h3 `
+const MovieTagLine = styled.h3`
   color: ${colors.lightGrey};
   font: 1.2rem/1.15 ${fonts.raleway};
   padding: calc(${space.vert} / 2) 0;

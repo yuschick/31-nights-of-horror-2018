@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors, times } from '../../../styles/theme';
 import { FadeIn, FadeOut, Flash } from '../../../utils/Animations.js';
@@ -165,5 +166,35 @@ class Cell extends Component {
     );
   }
 }
+
+Cell.propTypes = {
+  dim: PropTypes.bool,
+  noFade: PropTypes.bool,
+  hide: PropTypes.bool,
+  flash: PropTypes.bool,
+  delayXS: PropTypes.bool,
+  delaySM: PropTypes.bool,
+  delayMD: PropTypes.bool,
+  delayLG: PropTypes.bool,
+  delayXL: PropTypes.bool,
+  fast: PropTypes.bool,
+  slow: PropTypes.bool,
+  span2col: PropTypes.bool,
+  span3col: PropTypes.bool,
+  span4col: PropTypes.bool,
+  span2row: PropTypes.bool,
+  span3row: PropTypes.bool,
+  span4row: PropTypes.bool,
+  span2area: PropTypes.bool,
+  span3area: PropTypes.bool,
+  span4area: PropTypes.bool,
+  span2col3row: PropTypes.bool,
+  span2col4row: PropTypes.bool,
+  span3col2row: PropTypes.bool,
+  span3col4row: PropTypes.bool,
+  span4col2row: PropTypes.bool,
+  span4col3row: PropTypes.bool,
+  children: PropTypes.any
+};
 
 export default Cell;

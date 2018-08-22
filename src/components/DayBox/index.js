@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {colors, fonts, space} from '../../styles/theme';
 
-const DayBoxContainer = styled.div `
+const DayBoxContainer = styled.div`
   align-items: center;
   background: ${colors.secondary};
   color: ${colors.white};
