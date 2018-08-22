@@ -5,13 +5,12 @@ export const colors = {
   primary: '#4b0404',
   secondary: '#8c0f0f',
   tertiary: '#302f2f',
+  lightGrey: '#b5b5b5',
 
-  scoreBad: '',
-  scoreMid: '',
-  scoreHigh: '',
-
-  ratingLow: '',
-  ratingHigh: ''
+  scoreBad: '#EE6352',
+  scoreMid: '#FFF07C',
+  scoreHigh: '#74ea80',
+  scoreTrack: '#818181'
 };
 
 export const space = {
@@ -21,13 +20,22 @@ export const space = {
 };
 
 export const size = {
+  borderRadius: '5px',
   dateBarHeight: '40px',
   headerHeight: '64px',
   maxContent: '1280px'
 };
 
 export const fonts = {
-  cabin: "'Cabin', sans-serif",
-  oswald: "'Oswald', sans-serif",
-  roboto: "'Roboto', sans-serif"
+  raleway: "'Raleway', sans-serif",
+  oswald: "'Oswald', sans-serif"
+};
+
+export const times = {
+  base: "5s",
+  delayXs: "1.15s",
+  delaySm: "2.25s",
+  delayMd: "3.15s",
+  delayLg: "4.3s",
+  delayXl: "6.65s"
 };

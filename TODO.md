@@ -1,0 +1,9 @@
+- [X] Implement tracking functionality
+- [ ] Update Tracking data file with final movie selections
+- [ ] Add additional grid layouts
+- [ ] Add the trailer functionality
+- [ ] Add feature to only animate the grid that is currently in view
+- [ ] Add streaming links
+- [ ] Add loading screen / icon
+- [ ] Look into lazy loading each screen
+- [ ] Design mobile view

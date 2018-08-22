@@ -13,6 +13,7 @@ const HeaderContainer = styled.header`
   padding: ${space.default};
   position: sticky;
   top: 0;
+  z-index: 10;
 `;
 
 const HeaderContent = styled(ContentContainer)`

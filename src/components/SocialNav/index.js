@@ -8,8 +8,8 @@ import GithubLogo from '../../images/services/github.jpg';
 
 const SocialNavContainer = styled.section`
   background: ${colors.black};
-  bottom: -50px;
-  padding: ${space.default};
+  bottom: -40px;
+  padding: calc(${space.vert} / 2) ${space.hori};
   position: absolute;
   right: 0;
 `;
@@ -30,7 +30,7 @@ const Icon = styled.img.attrs({
   alt: props => props.alt
 })`
   display: block;
-  height: 20px;
+  height: 22px;
   opacity: .85;
   transition: opacity .25s ease;
   width: auto;

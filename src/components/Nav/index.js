@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { lighten } from 'polished';
-import { colors, size, space, fonts } from '../../styles/theme';
+import {lighten} from 'polished';
+import {colors, size, space, fonts} from '../../styles/theme';
+import { Firebase } from '../../api';
 
-const NavList = styled.ul`
+const NavList = styled.ul `
   display: flex;
   height: calc(${size.headerHeight} - calc(${space.default} * 2));
 `;
 
-const NavItem = styled.li`
+const NavItem = styled.li `
   align-self: center;
-  color: ${colors.tertiary};
-  font: 1.5rem/1 ${fonts.cabin};
+  color: ${lighten(0.1, colors.tertiary)};
+  font: 1.5rem/1 ${fonts.raleway};
   padding: 0 ${space.hori};
 
   &+ li {
@@ -24,7 +25,7 @@ const NavItem = styled.li`
     transition: color .25s ease;
 
     &:hover {
-      color: ${lighten(0.1, colors.tertiary)};
+      color: ${lighten(0.2, colors.tertiary)};
     }
   }
 `;
@@ -38,6 +39,7 @@ const Nav = () => (
           target="_blank"
           rel="noopener noreferrer"
           title="31 Nights of Horror"
+          onClick={() => { Firebase.TrackClick('Nav', '2017'); }}
         >
           2017
         </a>
@@ -48,6 +50,7 @@ const Nav = () => (
           target="_blank"
           rel="noopener noreferrer"
           title="31 Nights of Horror"
+          onClick={() => { Firebase.TrackClick('Nav', '2016'); }}
         >
           2016
         </a>
@@ -58,6 +61,7 @@ const Nav = () => (
           target="_blank"
           rel="noopener noreferrer"
           title="31 Nights of Horror"
+          onClick={() => { Firebase.TrackClick('Nav', '2015'); }}
         >
           2015
         </a>

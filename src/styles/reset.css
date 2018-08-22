@@ -75,10 +75,9 @@ html {
 }
 
 body {
-  background: url("../images/background.jpg") no-repeat fixed center #111;
-  background-size: cover;
-  font-family: "Cabin", sans-serif;
-  font-size: 16px;
+  background: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 176x;
   line-height: 1.75;
 }
 
