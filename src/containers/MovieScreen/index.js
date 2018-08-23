@@ -6,6 +6,7 @@ import { size } from '../../styles/theme';
 import { Find } from '../../utils';
 import { GetMovieDetails } from '../../api';
 
+import LoadingScreen from '../../components/LoadingScreen';
 import Grid from '../../components/Grid';
 
 const GridContainer = styled.section.attrs({
@@ -13,7 +14,7 @@ const GridContainer = styled.section.attrs({
 })`
   background: url(${props => props.backdrop}) center;
   background-size: cover;
-  display: grid;
+  display: ${props => props.loading ? 'block' : 'grid'};
   grid-gap: 1rem;
   grid-template-columns: .5fr .75fr repeat(13, 1fr) .75fr;
   grid-template-rows: repeat(2, 1fr) .65fr repeat(3, 1fr) 1.25fr repeat(2, 1fr);
@@ -79,21 +80,23 @@ class MovieScreen extends Component {
   }
 
   render() {
-    return this.state.loading
-      ? <span>Loading</span>
-      : (
-        <GridContainer
-          id={`movie-${this.props.date}`}
-          backdrop={this.props.backdrop}
-        >
-          <Grid
+    return (
+      <GridContainer
+        id={`movie-${this.props.date}`}
+        loading={this.state.loading}
+        backdrop={this.state.loading || this.state.preloading ? '' : this.props.backdrop}
+      >
+        {this.state.loading || this.state.preloading
+          ? <LoadingScreen />
+          : <Grid
             day={this.props.day}
             date={this.props.date}
             movie={this.state.movie}
             dim={this.state.active}
           />
-        </GridContainer>
-      );
+        }
+      </GridContainer>
+    );
   }
 }
 

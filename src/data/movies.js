@@ -5,19 +5,22 @@ import DawnOfTheDead from '../images/backdrops/dawn-of-the-dead.jpg';
 import TheAmityvilleHorror from '../images/backdrops/the-amityville-horror.jpg';
 import ChildsPlay from '../images/backdrops/childs-play.jpg';
 import Maniac from '../images/backdrops/maniac.jpg';
-import Clown from '../images/backdrops/clown.jpg';
-import TheHouseOnSororityRow from '../images/backdrops/the-house-on-sorority-row.jpg';
+// import Clown from '../images/backdrops/clown.jpg';
+import HouseOf1000Corpses from '../images/backdrops/house-of-1000-corpses.jpg';
+// import TheHouseOnSororityRow from '../images/backdrops/the-house-on-sorority-row.jpg';
 import TragedyGirls from '../images/backdrops/tragedy-girls.jpg';
 import TheHouseAtTheEndOfTime from '../images/backdrops/the-house-at-the-end-of-time.jpg';
 import Zombie from '../images/backdrops/zombie.jpg';
 import TheGirlNextDoor from '../images/backdrops/the-girl-next-door.jpg';
-import PuppetMaster from '../images/backdrops/puppet-master.jpg';
+// import PuppetMaster from '../images/backdrops/puppet-master.jpg';
 import Saw from '../images/backdrops/saw.jpg';
-import TheVoid from '../images/backdrops/the-void.jpg';
+// import TheVoid from '../images/backdrops/the-void.jpg';
+import Hidden from '../images/backdrops/hidden.jpg';
 import It from '../images/backdrops/it.jpg';
 // import TheHouseByTheCemetery from '../images/backdrops/the-house-by-the-cemetery.jpg';
 import Life from '../images/backdrops/life.jpg';
-import TheBarn from '../images/backdrops/the-barn.jpg';
+// import TheBarn from '../images/backdrops/the-barn.jpg';
+import Session9 from '../images/backdrops/session-9.jpg';
 import TheGirlWithAllTheGifts from '../images/backdrops/the-girl-with-all-the-gifts.jpg';
 import WolfCreek from '../images/backdrops/wolf-creek.jpg';
 import DeadSilence from '../images/backdrops/dead-silence.jpg';
@@ -26,7 +29,8 @@ import Terrifier from '../images/backdrops/terrifier.jpg';
 import TheBeyond from '../images/backdrops/the-beyond.jpg';
 import OuijaOriginOfEvil from '../images/backdrops/origin-of-evil.jpg';
 import TrainToBusan from '../images/backdrops/train-to-busan.jpg';
-import TheStrangers from '../images/backdrops/the-strangers.jpg';
+// import TheStrangers from '../images/backdrops/the-strangers.jpg';
+import EmilyRose from '../images/backdrops/the-exorcism-of-emily-rose.jpg';
 import AnnabelleCreation from '../images/backdrops/annabelle-creation.jpg';
 import GhostStories from '../images/backdrops/ghost-stories.jpg';
 import HellHouseLLC from '../images/backdrops/hell-house-llc.jpg';
@@ -93,12 +97,26 @@ export const movies = Immutable.from([
       youtube: ''
     }
   },
+  // {
+  //   title: 'Clown',
+  //   date: 5,
+  //   day: Days.FRIDAY,
+  //   backdrop: Clown,
+  //   movieId: 112454,
+  //   services: {
+  //     netflix: '',
+  //     hulu: '',
+  //     shudder: '',
+  //     amazon: '',
+  //     youtube: ''
+  //   }
+  // },
   {
-    title: 'Clown',
+    title: 'House of 1000 Corpses',
     date: 5,
     day: Days.FRIDAY,
-    backdrop: Clown,
-    movieId: 112454,
+    backdrop: HouseOf1000Corpses,
+    movieId: 2662,
     services: {
       netflix: '',
       hulu: '',
@@ -107,20 +125,20 @@ export const movies = Immutable.from([
       youtube: ''
     }
   },
-  {
-    title: 'The House on Sorority Row',
-    date: 5,
-    day: Days.FRIDAY,
-    backdrop: TheHouseOnSororityRow,
-    movieId: 40229,
-    services: {
-      netflix: '',
-      hulu: '',
-      shudder: '',
-      amazon: '',
-      youtube: ''
-    }
-  },
+  // {
+  //   title: 'The House on Sorority Row',
+  //   date: 5,
+  //   day: Days.FRIDAY,
+  //   backdrop: TheHouseOnSororityRow,
+  //   movieId: 40229,
+  //   services: {
+  //     netflix: '',
+  //     hulu: '',
+  //     shudder: '',
+  //     amazon: '',
+  //     youtube: ''
+  //   }
+  // },
   {
     title: 'Tragedy Girls',
     date: 6,
@@ -177,12 +195,26 @@ export const movies = Immutable.from([
       youtube: ''
     }
   },
+  // {
+  //   title: 'Puppet Master',
+  //   date: 10,
+  //   day: Days.WEDNESDAY,
+  //   backdrop: PuppetMaster,
+  //   movieId: 26956,
+  //   services: {
+  //     netflix: '',
+  //     hulu: '',
+  //     shudder: '',
+  //     amazon: '',
+  //     youtube: ''
+  //   }
+  // },
   {
-    title: 'Puppet Master',
+    title: 'Dead Silence',
     date: 10,
     day: Days.WEDNESDAY,
-    backdrop: PuppetMaster,
-    movieId: 26956,
+    backdrop: DeadSilence,
+    movieId: 14001,
     services: {
       netflix: '',
       hulu: '',
@@ -191,26 +223,26 @@ export const movies = Immutable.from([
       youtube: ''
     }
   },
+  // {
+  //   title: 'The Void',
+  //   date: 11,
+  //   day: Days.THURSDAY,
+  //   backdrop: TheVoid,
+  //   movieId: 378018,
+  //   services: {
+  //     netflix: '',
+  //     hulu: '',
+  //     shudder: '',
+  //     amazon: '',
+  //     youtube: ''
+  //   }
+  // },
   {
-    title: 'Saw',
-    date: 10,
-    day: Days.WEDNESDAY,
-    backdrop: Saw,
-    movieId: 176,
-    services: {
-      netflix: '',
-      hulu: '',
-      shudder: '',
-      amazon: '',
-      youtube: ''
-    }
-  },
-  {
-    title: 'The Void',
+    title: 'Hidden',
     date: 11,
     day: Days.THURSDAY,
-    backdrop: TheVoid,
-    movieId: 378018,
+    backdrop: Hidden,
+    movieId: 360784,
     services: {
       netflix: '',
       hulu: '',
@@ -247,12 +279,26 @@ export const movies = Immutable.from([
       youtube: ''
     }
   },
+  // {
+  //   title: 'The Barn',
+  //   date: 14,
+  //   day: Days.SUNDAY,
+  //   backdrop: TheBarn,
+  //   movieId: 378017,
+  //   services: {
+  //     netflix: '',
+  //     hulu: '',
+  //     shudder: '',
+  //     amazon: '',
+  //     youtube: ''
+  //   }
+  // },
   {
-    title: 'The Barn',
+    title: 'Session 9',
     date: 14,
     day: Days.SUNDAY,
-    backdrop: TheBarn,
-    movieId: 378017,
+    backdrop: Session9,
+    movieId: 10972,
     services: {
       netflix: '',
       hulu: '',
@@ -290,11 +336,11 @@ export const movies = Immutable.from([
     }
   },
   {
-    title: 'Dead Silence',
+    title: 'Saw',
     date: 17,
     day: Days.WEDNESDAY,
-    backdrop: DeadSilence,
-    movieId: 14001,
+    backdrop: Saw,
+    movieId: 176,
     services: {
       netflix: '',
       hulu: '',
@@ -373,12 +419,26 @@ export const movies = Immutable.from([
       youtube: ''
     }
   },
+  // {
+  //   title: 'The Strangers',
+  //   date: 23,
+  //   day: Days.TUESDAY,
+  //   backdrop: TheStrangers,
+  //   movieId: 10665,
+  //   services: {
+  //     netflix: '',
+  //     hulu: '',
+  //     shudder: '',
+  //     amazon: '',
+  //     youtube: ''
+  //   }
+  // },
   {
-    title: 'The Strangers',
+    title: 'The Exorcism of Emily Rose',
     date: 23,
     day: Days.TUESDAY,
-    backdrop: TheStrangers,
-    movieId: 10665,
+    backdrop: EmilyRose,
+    movieId: 8643,
     services: {
       netflix: '',
       hulu: '',

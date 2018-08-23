@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PreloadImage from 'react-preload-image'
 import { Firebase } from '../../api';
 
 import Header from '../../components/Header';
@@ -18,15 +17,7 @@ class Calendar extends Component {
         <Header/>
         <main>
           {movies.map(movie => {
-            return ([
-              <PreloadImage
-                style={{
-                  display: 'none'
-                }}
-                key={`backdrop-${movie.date}`}
-                src={movie.backdrop}
-                lazy
-              />,
+            return (
               <MovieScreen
                 key={movie.movieId}
                 id={movie.movieId}
@@ -35,7 +26,7 @@ class Calendar extends Component {
                 backdrop={movie.backdrop}
                 services={movie.services}
               />
-            ]);
+            );
           })}
         </main>
       </div>

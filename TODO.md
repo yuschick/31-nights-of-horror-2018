@@ -7,3 +7,4 @@
 - [ ] Add loading screen / icon
 - [ ] Look into lazy loading each screen
 - [ ] Design mobile view
+- [ ] Write tests

@@ -22,33 +22,33 @@ Need horror movie recommendations this October? Check out my fourth annual 31 Ni
 - The Amityville Horror
 - Child's Play
 - Maniac
-- Clown
+- House of 1000 Corpses
 - Tragedy Girls
 - The House at the End of Time
 - Zombie
 - The Girl Next Door
-- Puppet Master
-- The Void
+- Dead Silence
+- Hidden
 - It
-- The House by the Cemetery
-- The Barn
+- Life
+- Session 9
 - The Girl with all the Gifts
 - Wolf Creek
-- Dead Silence
+- Saw
 - Pumpkinhead
 - Terrifier
 - The Beyond
 - Oujia: Origin of Evil
 - Train to Busan
-- Veronica
+- The Exorcism of Emily Rose
 - Annabelle Creation
 - Ghost Stories
 - Hell House LLC
 - Hereditary
 - A Quiet Place
 - 28 Days Later
-- The Strangers
-- Incident in a Ghostland
+- Veronica
+- Incident in Ghostland
 
 ## Tech Notes
 - React + Prop Types
