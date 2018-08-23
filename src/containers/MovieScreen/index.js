@@ -14,7 +14,7 @@ const GridContainer = styled.section.attrs({
 })`
   background: url(${props => props.backdrop}) center;
   background-size: cover;
-  display: ${props => props.loading ? 'block' : 'grid'};
+  display: ${props => props.loading || props.preloading ? 'block' : 'grid'};
   grid-gap: 1rem;
   grid-template-columns: .5fr .75fr repeat(13, 1fr) .75fr;
   grid-template-rows: repeat(2, 1fr) .65fr repeat(3, 1fr) 1.25fr repeat(2, 1fr);
@@ -84,6 +84,7 @@ class MovieScreen extends Component {
       <GridContainer
         id={`movie-${this.props.date}`}
         loading={this.state.loading}
+        preloading={this.state.preloading}
         backdrop={this.state.loading || this.state.preloading ? '' : this.props.backdrop}
       >
         {this.state.loading || this.state.preloading

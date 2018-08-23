@@ -17,7 +17,7 @@ class Grid extends Component {
       <Cell dim={this.props.dim} span2col noFade key='cell-1-15' />,
       <Cell dim={this.props.dim} span2row delayLG fast key='cell-2-1' />,
       <Cell dim={this.props.dim} delaySM fast key='cell-2-4' />,
-      <Cell dim={this.props.dim} span2col3row hide delaySM key='cell-2-5' />,
+      <Cell dim={this.props.dim} focus={this.props.focus1} span2col3row hide delaySM key='cell-2-5' />,
       <Cell dim={this.props.dim} span3col noFade key='cell-2-7' />,
       <Cell dim={this.props.dim} span3col hide noFade key='cell-2-10' />,
       <Cell dim={this.props.dim} hide noFade key='cell-2-15' />,
@@ -28,14 +28,14 @@ class Grid extends Component {
       <DayBox day={this.props.day} key='cell-3-11' />,
       <DateBox date={this.props.date} key='cell-3-14' />,
       <Cell dim={this.props.dim} noFade key='cell-3-15' />,
-      <Cell dim={this.props.dim} span4col2row delayMD key='cell-4-1' />,
+      <Cell dim={this.props.dim} focus={this.props.focus2} span4col2row delayMD key='cell-4-1' />,
       <Cell dim={this.props.dim} noFade key='cell-4-9' />,
       <MovieCardContainer
         key='cell-4-10'
         movie={this.props.movie}
       />,
       <Cell dim={this.props.dim} slow noFade key='cell-4-15' />,
-      <Cell dim={this.props.dim} noFade span3col2row key='cell-5-5' />,
+      <Cell dim={this.props.dim} focus={this.props.focus3} noFade span3col2row key='cell-5-5' />,
       <Cell dim={this.props.dim} span2col3row noFade key='cell-5-15' />,
       <Cell dim={this.props.dim} span4col noFade key='cell-6-1' />,
       <Cell dim={this.props.dim} span2area noFade key='cell-7-1' />,
@@ -79,7 +79,10 @@ Grid.propTypes = {
       imdb: PropTypes.string
     }).isRequired
   }).isRequired,
-  dim: PropTypes.bool.isRequired
+  dim: PropTypes.bool.isRequired,
+  focus1: PropTypes.bool,
+  focus2: PropTypes.bool,
+  focus3: PropTypes.bool
 }
 
 export default Grid;

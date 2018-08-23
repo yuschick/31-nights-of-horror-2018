@@ -128,6 +128,11 @@ const GridCell = styled.div`
     background: rgba(0,0,0,.1);
     transition: background .5s ease;
   `}
+
+  ${props => props.focus && `
+    animation: ${FadeIn} calc(${times.base} * 1.1) ${times.delaySm} infinite alternate;
+    background: rgba(0,0,0,1);
+  `}
 `;
 
 class Cell extends Component {
@@ -135,6 +140,7 @@ class Cell extends Component {
     return (
       <GridCell
         dim={this.props.dim}
+        focus={this.props.focus}
         noFade={this.props.noFade}
         hide={this.props.hide}
         flash={this.props.flash}
@@ -169,6 +175,7 @@ class Cell extends Component {
 
 Cell.propTypes = {
   dim: PropTypes.bool,
+  focus: PropTypes.bool,
   noFade: PropTypes.bool,
   hide: PropTypes.bool,
   flash: PropTypes.bool,
