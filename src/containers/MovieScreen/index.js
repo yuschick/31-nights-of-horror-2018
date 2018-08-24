@@ -18,7 +18,7 @@ const GridContainer = styled.section.attrs({
   grid-gap: 1rem;
   grid-template-columns: .5fr .75fr repeat(13, 1fr) .75fr;
   grid-template-rows: repeat(2, 1fr) .65fr repeat(3, 1fr) 1.25fr repeat(2, 1fr);
-  height: calc(100vh - ${size.headerHeight});
+  min-height: calc(100vh - ${size.headerHeight});
   position: relative;
   width: 100%;
 `;

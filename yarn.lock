@@ -5934,9 +5934,9 @@ react-is@^16.3.1:
   version "16.4.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.2.tgz#84891b56c2b6d9efdee577cc83501dfc5ecead88"
 
-react-preload-image@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/react-preload-image/-/react-preload-image-1.0.4.tgz#7b7bfb9cf05670631b69cbb25cd75eb9f4a15d84"
+react-lazyload@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.3.0.tgz#ccb134223012447074a96543954f44b055dc6185"
 
 react-scripts@1.1.4:
   version "1.1.4"

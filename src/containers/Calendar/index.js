@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import LazyLoad from 'react-lazyload';
 import { Firebase } from '../../api';
 
 import Header from '../../components/Header';
@@ -18,14 +19,19 @@ class Calendar extends Component {
         <main>
           {movies.map(movie => {
             return (
-              <MovieScreen
+              <LazyLoad
                 key={movie.movieId}
-                id={movie.movieId}
-                day={movie.day}
-                date={movie.date}
-                backdrop={movie.backdrop}
-                services={movie.services}
-              />
+                height='100vh'
+                unmountIfInvisible={true}
+              >
+                <MovieScreen
+                  id={movie.movieId}
+                  day={movie.day}
+                  date={movie.date}
+                  backdrop={movie.backdrop}
+                  services={movie.services}
+                />
+              </LazyLoad>
             );
           })}
         </main>

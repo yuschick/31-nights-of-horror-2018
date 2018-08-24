@@ -1,11 +1,11 @@
 - [X] Implement tracking functionality
-- [ ] Update Tracking data file with final movie selections
-- [ ] Add the trailer functionality
+- [X] Add the trailer functionality
 - [X] Add focus functionality to the grid
-- [ ] Add feature to only animate the grid that is currently in view
-- [ ] Add streaming links
 - [X] Add loading screen / icon
-- [ ] Look into lazy loading each screen
+- [X] Look into lazy loading each screen
+- [X] Add feature to only animate the grid that is currently in view
 - [ ] Design mobile view
-- [ ] Write tests
+- [ ] Update Tracking data file with final movie selections
+- [ ] Add streaming links
 - [ ] Convert components to Stateless where a full Class is not needed
+- [ ] Write tests
