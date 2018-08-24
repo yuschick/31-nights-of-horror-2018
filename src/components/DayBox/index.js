@@ -8,13 +8,17 @@ const DayBoxContainer = styled.div`
   background: ${colors.secondary};
   color: ${colors.white};
   display: flex;
+  flex: 3;
   font: 1.25rem/1 ${fonts.raleway};
-  grid-column-end: span 3;
   justify-content: center;
   letter-spacing: 1.15px;
   outline: 1rem solid ${colors.black};
   padding: ${space.default};
   text-transform: uppercase;
+
+  @media (max-width: 750px) {
+    outline: none;
+  }
 `;
 
 class DayBox extends Component {

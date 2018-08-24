@@ -8,10 +8,16 @@ const DateBoxContainer = styled.div`
   background: ${colors.tertiary};
   color: ${colors.white};
   display: flex;
+  flex: 1;
   font: 1.25rem/1 ${fonts.raleway};
   justify-content: center;
+  margin-left: 1rem;
   min-width: 40px;
   outline: 1rem solid ${colors.black};
+
+  @media (max-width: 750px) {
+    outline: none;
+  }
 `;
 
 class DateBox extends Component {

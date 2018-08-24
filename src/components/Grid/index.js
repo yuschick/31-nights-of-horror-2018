@@ -1,9 +1,30 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { colors } from '../../styles/theme';
 import Cell from './Cell';
 import DayBox from '../DayBox';
 import DateBox from '../DateBox';
 import MovieCardContainer from '../MovieCardContainer';
+
+const Wrapper = styled.div`
+  background: ${colors.black};
+  display: flex;
+  grid-column-end: span 4;
+  justify-content: space-between;
+  outline: 1rem solid ${colors.black};
+
+  @media (max-width: 750px) {
+    margin-right: .5rem;
+  }
+
+  @media (max-width: 900px) {
+    align-self: flex-end;
+    background: rgba(0, 0, 0,.9);
+    grid-area: 2 / 9 / 2 / 16;
+    outline: .5rem solid rgba(0, 0, 0,.9);
+  }
+`;
 
 class Grid extends Component {
   render() {
@@ -25,8 +46,10 @@ class Grid extends Component {
       <Cell dim={this.props.dim} span3col hide noFade key='cell-3-2' />,
       <Cell dim={this.props.dim} noFade key='cell-3-7' />,
       <Cell dim={this.props.dim} span3col noFade key='cell-3-8' />,
-      <DayBox day={this.props.day} key='cell-3-11' />,
-      <DateBox date={this.props.date} key='cell-3-14' />,
+      <Wrapper key='cell-3-11'>
+        <DayBox day={this.props.day} />
+        <DateBox date={this.props.date} />
+      </Wrapper>,
       <Cell dim={this.props.dim} noFade key='cell-3-15' />,
       <Cell dim={this.props.dim} focus={this.props.focus2} span4col2row delayMD key='cell-4-1' />,
       <Cell dim={this.props.dim} noFade key='cell-4-9' />,

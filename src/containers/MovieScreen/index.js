@@ -21,6 +21,16 @@ const GridContainer = styled.section.attrs({
   min-height: calc(100vh - ${size.headerHeight});
   position: relative;
   width: 100%;
+
+  @media (max-width: 750px) {
+    align-content: center;
+    align-items: center;
+    background-position: -100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
 `;
 
 class MovieScreen extends Component {
@@ -30,9 +40,9 @@ class MovieScreen extends Component {
     this.state = {
       loading: true,
       preloading: true,
-      inView: false,
       trailerActive: false,
-      movie: {}
+      movie: {},
+      testing: true
     };
 
     this.toggleTrailer = this.toggleTrailer.bind(this);
@@ -99,7 +109,7 @@ class MovieScreen extends Component {
             day={this.props.day}
             date={this.props.date}
             movie={this.state.movie}
-            dim={!this.state.inView || this.state.trailerActive}
+            dim={this.state.testing || this.state.trailerActive}
             trailerActive={this.state.trailerActive}
             toggleTrailer={this.toggleTrailer}
           />

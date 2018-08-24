@@ -18,6 +18,15 @@ const Container = styled.section`
   grid-area: 4 / 8 / 8 / 15;
   padding: ${space.vert} calc(${space.hori} * 2);
   z-index: 2;
+
+  @media (max-width: 750px) {
+    box-shadow: none;
+  }
+
+  @media (max-width: 900px) {
+    background: rgba(0, 0, 0,.9);
+    grid-area: 4 / 5 / 8 / 16;
+  }
 `;
 
 const ArticleContainer = styled.article`

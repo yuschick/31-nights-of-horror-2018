@@ -4,7 +4,7 @@
 - [X] Add loading screen / icon
 - [X] Look into lazy loading each screen
 - [X] Add feature to only animate the grid that is currently in view
-- [ ] Design mobile view
+- [X] Design mobile view
 - [ ] Update Tracking data file with final movie selections
 - [ ] Add streaming links
 - [ ] Convert components to Stateless where a full Class is not needed

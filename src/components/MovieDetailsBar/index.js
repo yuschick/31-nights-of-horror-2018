@@ -12,6 +12,18 @@ const ListContainer = styled.ul`
   align-items: center;
   display: flex;
   margin: calc(${space.vert} * 1.5) 0;
+
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+
+    & li:first-child {
+      clear: both;
+      display: block;
+      flex: 1 1 100%;
+      margin: ${space.vert} auto;
+      width: 100%;
+    }
+  }
 `;
 
 const ListItem = styled.li`
@@ -21,6 +33,11 @@ const ListItem = styled.li`
 
   & + li {
     padding-left: calc(${space.hori} * 2);
+  }
+
+  @media (max-width: 750px) {
+    flex: 1;
+    justify-content: center;
   }
 `;
 
@@ -45,12 +62,18 @@ const TrailerButton = styled.button`
   cursor: pointer;
   display: flex;
   font: 1rem/1 ${fonts.raleway};
+  justify-content: center;
   padding: 5px ${space.hori};
   -webkit-text-fill-color: ${colors.white};
   -webkit-text-stroke: .25px rgba(0, 0, 0, .5);
+  width: 100%;
 
   &:hover {
     background: linear-gradient(to top, ${colors.primary} 0%, ${colors.secondary} 40%);
+  }
+
+  @media (max-width: 750px) {
+    padding: ${space.default};
   }
 `;
 

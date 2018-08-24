@@ -10,6 +10,10 @@ const GridCell = styled.div`
   outline: 1rem solid ${colors.black};
   transition: background 1s ease;
 
+  @media (max-width: 750px) {
+    display: none;
+  }
+
   ${props => props.hide && `
     animation: ${FadeIn} calc(${times.base} * 1.1) infinite alternate;
     background: rgba(0,0,0,1);
@@ -126,7 +130,7 @@ const GridCell = styled.div`
 
   ${props => props.dim && `
     animation: none;
-    background: rgba(0,0,0,.9);
+    background: rgba(0,0,0,.1);
     transition: background 1s ease;
   `}
 
