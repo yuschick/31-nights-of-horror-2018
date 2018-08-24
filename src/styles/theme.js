@@ -5,6 +5,7 @@ export const colors = {
   primary: '#4b0404',
   secondary: '#8c0f0f',
   tertiary: '#302f2f',
+  darkGrey: '#444',
   lightGrey: '#b5b5b5',
 
   scoreBad: '#EE6352',

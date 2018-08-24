@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors } from '../../styles/theme';
@@ -45,21 +45,19 @@ const ScoreText = styled.span`
   width: 100%;
 `;
 
-class MovieScore extends Component {
-  render() {
-    return (
-      <Container>
-        <SVGContainer>
-          <TrackPath />
-          <ScorePath
-            score={this.props.score}
-          />
-        </SVGContainer>
-        <ScoreText>{this.props.score.toString().length === 1 ? `${this.props.score}0` : this.props.score}</ScoreText>
-      </Container>
-    );
-  }
-}
+const MovieScore = ({ score }) => {
+  return (
+    <Container>
+      <SVGContainer>
+        <TrackPath />
+        <ScorePath
+          score={score}
+        />
+      </SVGContainer>
+      <ScoreText>{score.toString().length === 1 ? `${score}0` : score}</ScoreText>
+    </Container>
+  );
+};
 
 MovieScore.propTypes = {
   score: PropTypes.number.isRequired

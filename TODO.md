@@ -8,3 +8,4 @@
 - [ ] Look into lazy loading each screen
 - [ ] Design mobile view
 - [ ] Write tests
+- [ ] Convert components to Stateless where a full Class is not needed

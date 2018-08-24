@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {fonts, space} from '../../styles/theme';
+import {colors, fonts, space} from '../../styles/theme';
+import PlayIcon from '../../svg/play.svg';
 import CalendarIcon from '../../svg/calendar.svg';
 import LanguageIcon from '../../svg/language.svg';
 import MovieRating from '../MovieRating';
@@ -13,7 +14,7 @@ const ListContainer = styled.ul`
 `;
 
 const ListItem = styled.li`
-  align-items: center;
+  align-content: center;
   display: flex;
   font: 1rem/1 ${fonts.raleway};
 
@@ -29,15 +30,38 @@ const Icon = styled
     alt: props => props.alt
   })`
   display: block;
-  height: 16px;
+  height: ${props => props.small ? '13px' : '16px'};
   margin-right: calc(${space.hori} / 2);
   width: auto;
+`;
+
+const TrailerButton = styled.button`
+  align-items: center;
+  align-content: center;
+  appearance: none;
+  background: linear-gradient(to top, ${colors.primary} 0%, ${colors.secondary} 80%);
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  font: 1rem/1 ${fonts.raleway};
+  padding: 5px ${space.hori};
+  -webkit-text-fill-color: ${colors.white};
+  -webkit-text-stroke: .25px rgba(0, 0, 0, .5);
+
+  &:hover {
+    background: linear-gradient(to top, ${colors.primary} 0%, ${colors.secondary} 40%);
+  }
 `;
 
 class MovieDetailsBar extends Component {
   render() {
     return (
       <ListContainer>
+        <ListItem>
+          <TrailerButton onClick={this.props.toggleTrailer}>
+            <Icon src={PlayIcon} alt="Watch Trailer" small /> Watch Trailer
+          </TrailerButton>
+        </ListItem>
         <ListItem>
           <Icon src={CalendarIcon} alt="Release Year"/> {this.props.release}
         </ListItem>
@@ -55,7 +79,8 @@ class MovieDetailsBar extends Component {
 MovieDetailsBar.propTypes = {
   release: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,
-  rating: PropTypes.string.isRequired
+  rating: PropTypes.string.isRequired,
+  toggleTrailer: PropTypes.func.isRequired
 };
 
 export default MovieDetailsBar;

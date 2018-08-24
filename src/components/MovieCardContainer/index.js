@@ -8,6 +8,7 @@ import MovieDetailsBar from '../MovieDetailsBar';
 import MovieOverview from '../MovieOverview';
 import MovieServices from '../MovieServices';
 import MovieScore from '../MovieScore';
+import MovieTrailer from '../MovieTrailer';
 
 const Container = styled.section`
   background: ${colors.black};
@@ -18,11 +19,21 @@ const Container = styled.section`
   z-index: 2;
 `;
 
+const ArticleContainer = styled.article`
+  opacity: 1;
+  transition: opacity .5s ease;
+
+  ${props => props.dim && `
+    opacity: 0;
+  `};
+`;
+
 const CardContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  position: relative;
 `;
 
 const CardFooter = styled.footer`
@@ -36,7 +47,12 @@ class MovieCardContainer extends Component {
     return (
       <Container>
         <CardContentContainer>
-          <article>
+          {
+            this.props.trailer
+              ? <MovieTrailer trailer={this.props.movie.trailer} />
+              : null
+          }
+          <ArticleContainer dim={this.props.trailer}>
             <header>
               <TitleAndTagline
                 title={this.props.movie.title}
@@ -44,12 +60,14 @@ class MovieCardContainer extends Component {
               <MovieDetailsBar
                 release={this.props.movie.release}
                 language={this.props.movie.language}
-                rating={this.props.movie.rating}/>
+                rating={this.props.movie.rating}
+                toggleTrailer={this.props.toggleTrailer}
+              />
             </header>
             <main>
               <MovieOverview overview={this.props.movie.overview}/>
             </main>
-          </article>
+          </ArticleContainer>
           <CardFooter>
             <MovieServices title={this.props.movie.title} services={this.props.movie.services}/>
             <MovieScore score={this.props.movie.score}/>
@@ -78,7 +96,9 @@ MovieCardContainer.propTypes = {
       amazon: PropTypes.string,
       imdb: PropTypes.string
     }).isRequired
-  }).isRequired
+  }).isRequired,
+  trailer: PropTypes.bool.isRequired,
+  toggleTrailer: PropTypes.func.isRequired
 }
 
 export default MovieCardContainer;

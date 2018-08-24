@@ -33,6 +33,8 @@ class Grid extends Component {
       <MovieCardContainer
         key='cell-4-10'
         movie={this.props.movie}
+        trailer={this.props.trailer}
+        toggleTrailer={this.props.toggleTrailer}
       />,
       <Cell dim={this.props.dim} slow noFade key='cell-4-15' />,
       <Cell dim={this.props.dim} focus={this.props.focus3} noFade span3col2row key='cell-5-5' />,
@@ -82,7 +84,9 @@ Grid.propTypes = {
   dim: PropTypes.bool.isRequired,
   focus1: PropTypes.bool,
   focus2: PropTypes.bool,
-  focus3: PropTypes.bool
+  focus3: PropTypes.bool,
+  trailer: PropTypes.bool.isRequired,
+  toggleTrailer: PropTypes.func.isRequired
 }
 
 export default Grid;

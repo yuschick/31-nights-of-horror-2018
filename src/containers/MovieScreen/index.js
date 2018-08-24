@@ -34,12 +34,18 @@ class MovieScreen extends Component {
       trailer: false,
       movie: {}
     };
+
+    this.toggleTrailer = this.toggleTrailer.bind(this);
   }
 
   componentDidMount() {
     GetMovieDetails(this.props.id).then((data) => {
       this.formatData(data);
     });
+  }
+
+  toggleTrailer() {
+    this.setState({ trailer: !this.state.trailer });
   }
 
   preloadBackdrop() {
@@ -93,7 +99,9 @@ class MovieScreen extends Component {
             day={this.props.day}
             date={this.props.date}
             movie={this.state.movie}
-            dim={this.state.active}
+            dim={this.state.active || this.state.trailer}
+            trailer={this.state.trailer}
+            toggleTrailer={this.toggleTrailer}
           />
         }
       </GridContainer>
