@@ -8,14 +8,12 @@ const Container = styled.div`
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 2;
 `;
 
 const IFrame = styled.iframe.attrs({
-  allow: 'autoplay',
   frameBorder: 0,
   height: '100%',
-  src: `https://www.youtube.com/embed/${props => props.trailer}?rel=0&amp;controls=0&amp;showinfo=0`,
+  src: props => props.src,
   width: '100%'
 })`
   height: 100%;
@@ -25,7 +23,7 @@ const IFrame = styled.iframe.attrs({
 const MovieTrailer = ({ trailer }) => {
   return (
     <Container>
-      <IFrame />
+      <IFrame src={`https://www.youtube.com/embed/${trailer}?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1`} />
     </Container>
   );
 };

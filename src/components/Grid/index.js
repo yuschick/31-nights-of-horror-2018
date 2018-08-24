@@ -33,7 +33,7 @@ class Grid extends Component {
       <MovieCardContainer
         key='cell-4-10'
         movie={this.props.movie}
-        trailer={this.props.trailer}
+        trailerActive={this.props.trailerActive}
         toggleTrailer={this.props.toggleTrailer}
       />,
       <Cell dim={this.props.dim} slow noFade key='cell-4-15' />,
@@ -85,7 +85,7 @@ Grid.propTypes = {
   focus1: PropTypes.bool,
   focus2: PropTypes.bool,
   focus3: PropTypes.bool,
-  trailer: PropTypes.bool.isRequired,
+  trailerActive: PropTypes.bool.isRequired,
   toggleTrailer: PropTypes.func.isRequired
 }
 

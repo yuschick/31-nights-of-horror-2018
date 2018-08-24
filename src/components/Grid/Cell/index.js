@@ -8,6 +8,7 @@ const GridCell = styled.div`
   animation: ${FadeOut} ${times.base} ease infinite alternate;
   background: rgba(0,0,0,.15);
   outline: 1rem solid ${colors.black};
+  transition: background 1s ease;
 
   ${props => props.hide && `
     animation: ${FadeIn} calc(${times.base} * 1.1) infinite alternate;
@@ -125,8 +126,8 @@ const GridCell = styled.div`
 
   ${props => props.dim && `
     animation: none;
-    background: rgba(0,0,0,.1);
-    transition: background .5s ease;
+    background: rgba(0,0,0,.9);
+    transition: background 1s ease;
   `}
 
   ${props => props.focus && `

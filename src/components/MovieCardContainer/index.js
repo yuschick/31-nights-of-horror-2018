@@ -9,6 +9,7 @@ import MovieOverview from '../MovieOverview';
 import MovieServices from '../MovieServices';
 import MovieScore from '../MovieScore';
 import MovieTrailer from '../MovieTrailer';
+import CloseIcon from '../CloseIcon';
 
 const Container = styled.section`
   background: ${colors.black};
@@ -48,11 +49,11 @@ class MovieCardContainer extends Component {
       <Container>
         <CardContentContainer>
           {
-            this.props.trailer
+            this.props.trailerActive
               ? <MovieTrailer trailer={this.props.movie.trailer} />
               : null
           }
-          <ArticleContainer dim={this.props.trailer}>
+          <ArticleContainer dim={this.props.trailerActive}>
             <header>
               <TitleAndTagline
                 title={this.props.movie.title}
@@ -61,6 +62,7 @@ class MovieCardContainer extends Component {
                 release={this.props.movie.release}
                 language={this.props.movie.language}
                 rating={this.props.movie.rating}
+                title={this.props.movie.title}
                 toggleTrailer={this.props.toggleTrailer}
               />
             </header>
@@ -70,7 +72,11 @@ class MovieCardContainer extends Component {
           </ArticleContainer>
           <CardFooter>
             <MovieServices title={this.props.movie.title} services={this.props.movie.services}/>
-            <MovieScore score={this.props.movie.score}/>
+            {
+              this.props.trailerActive
+                ? <CloseIcon toggleTrailer={this.props.toggleTrailer} />
+                : <MovieScore score={this.props.movie.score}/>
+            }
           </CardFooter>
         </CardContentContainer>
       </Container>
@@ -97,7 +103,7 @@ MovieCardContainer.propTypes = {
       imdb: PropTypes.string
     }).isRequired
   }).isRequired,
-  trailer: PropTypes.bool.isRequired,
+  trailerActive: PropTypes.bool.isRequired,
   toggleTrailer: PropTypes.func.isRequired
 }
 

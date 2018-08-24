@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Firebase } from '../../api';
 import {colors, fonts, space} from '../../styles/theme';
 import PlayIcon from '../../svg/play.svg';
 import CalendarIcon from '../../svg/calendar.svg';
@@ -54,11 +55,16 @@ const TrailerButton = styled.button`
 `;
 
 class MovieDetailsBar extends Component {
+  handleClick() {
+    this.props.toggleTrailer();
+    Firebase.TrackClick(this.props.title, 'trailer');
+  }
+
   render() {
     return (
       <ListContainer>
         <ListItem>
-          <TrailerButton onClick={this.props.toggleTrailer}>
+          <TrailerButton onClick={() => { this.handleClick(); }}>
             <Icon src={PlayIcon} alt="Watch Trailer" small /> Watch Trailer
           </TrailerButton>
         </ListItem>
@@ -79,6 +85,7 @@ class MovieDetailsBar extends Component {
 MovieDetailsBar.propTypes = {
   release: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   rating: PropTypes.string.isRequired,
   toggleTrailer: PropTypes.func.isRequired
 };

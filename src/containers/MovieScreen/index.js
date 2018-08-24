@@ -30,8 +30,8 @@ class MovieScreen extends Component {
     this.state = {
       loading: true,
       preloading: true,
-      active: true,
-      trailer: false,
+      inView: false,
+      trailerActive: false,
       movie: {}
     };
 
@@ -45,7 +45,7 @@ class MovieScreen extends Component {
   }
 
   toggleTrailer() {
-    this.setState({ trailer: !this.state.trailer });
+    this.setState({ trailerActive: !this.state.trailerActive });
   }
 
   preloadBackdrop() {
@@ -99,8 +99,8 @@ class MovieScreen extends Component {
             day={this.props.day}
             date={this.props.date}
             movie={this.state.movie}
-            dim={this.state.active || this.state.trailer}
-            trailer={this.state.trailer}
+            dim={!this.state.inView || this.state.trailerActive}
+            trailerActive={this.state.trailerActive}
             toggleTrailer={this.toggleTrailer}
           />
         }
