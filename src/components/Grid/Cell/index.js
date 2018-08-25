@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors, times } from '../../../styles/theme';
@@ -11,6 +11,7 @@ const GridCell = styled.div`
   transition: background 1s ease;
 
   @media (max-width: 750px) {
+    animation: none;
     display: none;
   }
 
@@ -128,54 +129,81 @@ const GridCell = styled.div`
     grid-row-end: span 3;
   `}
 
-  ${props => props.dim && `
-    animation: none;
-    background: rgba(0,0,0,.1);
-    transition: background 1s ease;
-  `}
-
   ${props => props.focus && `
     animation: ${FadeIn} calc(${times.base} * 1.1) ${times.delaySm} infinite alternate;
     background: rgba(0,0,0,1);
   `}
+
+  ${props => props.dim && `
+    animation: none;
+    background: rgba(0,0,0,.9);
+    transition: background 1s ease;
+  `}
 `;
 
-class Cell extends Component {
-  render() {
-    return (
-      <GridCell
-        dim={this.props.dim}
-        focus={this.props.focus}
-        noFade={this.props.noFade}
-        hide={this.props.hide}
-        flash={this.props.flash}
-        delayXS={this.props.delayXS}
-        delaySM={this.props.delaySM}
-        delayMD={this.props.delayMD}
-        delayLG={this.props.delayLG}
-        delayXL={this.props.delayXL}
-        fast={this.props.fast}
-        slow={this.props.slow}
-        span2col={this.props.span2col}
-        span3col={this.props.span3col}
-        span4col={this.props.span4col}
-        span2row={this.props.span2row}
-        span3row={this.props.span3row}
-        span4row={this.props.span4row}
-        span2area={this.props.span2area}
-        span3area={this.props.span3area}
-        span4area={this.props.span4area}
-        span2col3row={this.props.span2col3row}
-        span2col4row={this.props.span2col4row}
-        span3col2row={this.props.span3col2row}
-        span3col4row={this.props.span3col4row}
-        span4col2row={this.props.span4col2row}
-        span4col3row={this.props.span4col3row}
-      >
-        {this.props.children}
-      </GridCell>
-    );
-  }
+const Cell = ({
+  dim,
+  focus,
+  noFade,
+  hide,
+  flash,
+  delayXS,
+  delaySM,
+  delayMD,
+  delayLG,
+  delayXL,
+  fast,
+  slow,
+  span2col,
+  span3col,
+  span4col,
+  span2row,
+  span3row,
+  span4row,
+  span2area,
+  span3area,
+  span4area,
+  span2col3row,
+  span2col4row,
+  span3col2row,
+  span3col4row,
+  span4col2row,
+  span4col3row,
+  children
+}) => {
+  return (
+    <GridCell
+      dim={dim}
+      focus={focus}
+      noFade={noFade}
+      hide={hide}
+      flash={flash}
+      delayXS={delayXS}
+      delaySM={delaySM}
+      delayMD={delayMD}
+      delayLG={delayLG}
+      delayXL={delayXL}
+      fast={fast}
+      slow={slow}
+      span2col={span2col}
+      span3col={span3col}
+      span4col={span4col}
+      span2row={span2row}
+      span3row={span3row}
+      span4row={span4row}
+      span2area={span2area}
+      span3area={span3area}
+      span4area={span4area}
+      span2col3row={span2col3row}
+      span2col4row={span2col4row}
+      span3col2row={span3col2row}
+      span3col4row={span3col4row}
+      span4col2row={span4col2row}
+      span4col3row={span4col3row}
+    >
+      {children}
+    </GridCell>
+  );
 }
 
 Cell.propTypes = {

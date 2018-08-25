@@ -5,7 +5,11 @@
 - [X] Look into lazy loading each screen
 - [X] Add feature to only animate the grid that is currently in view
 - [X] Design mobile view
+- [X] Fine tune background images, (standardize and optimize)
+- [X] Define all movie focus locations in data
+- [X] Convert components to Stateless where a full Class is not needed
+- [X] Look at ensuring CSS animations are disabled after the grid is lost
+- [ ] Look into having a smaller version of backdrops for mobile
 - [ ] Update Tracking data file with final movie selections
 - [ ] Add streaming links
-- [ ] Convert components to Stateless where a full Class is not needed
 - [ ] Write tests

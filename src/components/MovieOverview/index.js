@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { space } from '../../styles/theme';
@@ -8,14 +8,12 @@ const Overview = styled.p`
   margin: ${space.vert} 0;
 `;
 
-class MovieOverview extends Component {
-  render() {
-    return (
-      <Overview>
-        {this.props.overview}
-      </Overview>
-    );
-  }
+const MovieOverview = ({ overview }) => {
+  return (
+    <Overview>
+      {overview}
+    </Overview>
+  );
 }
 
 MovieOverview.propTypes = {

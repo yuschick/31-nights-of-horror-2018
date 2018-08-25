@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {colors, fonts, space} from '../../styles/theme';
@@ -23,17 +23,15 @@ const MovieTagLine = styled.h3`
   padding: calc(${space.vert} / 2) 0;
 `;
 
-class TitleAndTagline extends Component {
-  render() {
-    return ([
-      <MovieTitle key='title'>
-        { this.props.title }
-      </MovieTitle>,
-      <MovieTagLine key='tagline'>
-        {this.props.tagline}
-      </MovieTagLine>
-    ]);
-  }
+const TitleAndTagline = ({ title, tagline }) => {
+  return ([
+    <MovieTitle key='title'>
+      {title}
+    </MovieTitle>,
+    <MovieTagLine key='tagline'>
+      {tagline}
+    </MovieTagLine>
+  ]);
 }
 
 TitleAndTagline.propTypes = {

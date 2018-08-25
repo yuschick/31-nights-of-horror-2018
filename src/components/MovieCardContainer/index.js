@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {colors, space} from '../../styles/theme';
@@ -52,45 +52,47 @@ const CardFooter = styled.footer`
   justify-content: space-between;
 `;
 
-class MovieCardContainer extends Component {
-  render() {
-    return (
-      <Container>
-        <CardContentContainer>
+const MovieCardContainer = ({
+  movie,
+  trailerActive,
+  toggleTrailer
+}) => {
+  return (
+    <Container>
+      <CardContentContainer>
+        {
+          trailerActive
+            ? <MovieTrailer trailer={movie.trailer} />
+            : null
+        }
+        <ArticleContainer dim={trailerActive}>
+          <header>
+            <TitleAndTagline
+              title={movie.title}
+              tagline={movie.tagline}/>
+            <MovieDetailsBar
+              release={movie.release}
+              language={movie.language}
+              rating={movie.rating}
+              title={movie.title}
+              toggleTrailer={toggleTrailer}
+            />
+          </header>
+          <main>
+            <MovieOverview overview={movie.overview}/>
+          </main>
+        </ArticleContainer>
+        <CardFooter>
+          <MovieServices title={movie.title} services={movie.services}/>
           {
-            this.props.trailerActive
-              ? <MovieTrailer trailer={this.props.movie.trailer} />
-              : null
+            trailerActive
+              ? <CloseIcon toggleTrailer={toggleTrailer} />
+              : <MovieScore score={movie.score}/>
           }
-          <ArticleContainer dim={this.props.trailerActive}>
-            <header>
-              <TitleAndTagline
-                title={this.props.movie.title}
-                tagline={this.props.movie.tagline}/>
-              <MovieDetailsBar
-                release={this.props.movie.release}
-                language={this.props.movie.language}
-                rating={this.props.movie.rating}
-                title={this.props.movie.title}
-                toggleTrailer={this.props.toggleTrailer}
-              />
-            </header>
-            <main>
-              <MovieOverview overview={this.props.movie.overview}/>
-            </main>
-          </ArticleContainer>
-          <CardFooter>
-            <MovieServices title={this.props.movie.title} services={this.props.movie.services}/>
-            {
-              this.props.trailerActive
-                ? <CloseIcon toggleTrailer={this.props.toggleTrailer} />
-                : <MovieScore score={this.props.movie.score}/>
-            }
-          </CardFooter>
-        </CardContentContainer>
-      </Container>
-    );
-  }
+        </CardFooter>
+      </CardContentContainer>
+    </Container>
+  );
 }
 
 MovieCardContainer.propTypes = {

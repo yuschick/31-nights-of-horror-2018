@@ -112,6 +112,9 @@ class MovieScreen extends Component {
             dim={this.state.testing || this.state.trailerActive}
             trailerActive={this.state.trailerActive}
             toggleTrailer={this.toggleTrailer}
+            focus1={this.props.focus === 1}
+            focus2={this.props.focus === 2}
+            focus3={this.props.focus === 3}
           />
         }
       </GridContainer>
@@ -124,6 +127,7 @@ MovieScreen.propTypes = {
   day: PropTypes.string.isRequired,
   date: PropTypes.number.isRequired,
   backdrop: PropTypes.string.isRequired,
+  focus: PropTypes.number.isRequired,
   services: PropTypes.shape({
     netflix: PropTypes.string,
     hulu: PropTypes.string,

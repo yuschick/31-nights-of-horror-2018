@@ -5,7 +5,7 @@ import LoadingSkull from '../../svg/skull.svg';
 const Container = styled.div`
   align-content: center;
   display: flex;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   width: 100%;
 `;

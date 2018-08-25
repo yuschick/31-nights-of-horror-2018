@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {colors, fonts} from '../../styles/theme';
@@ -13,27 +13,28 @@ const DateBoxContainer = styled.div`
   justify-content: center;
   margin-left: 1rem;
   min-width: 40px;
+  opacity: ${props => props.trailerActive ? '.2' : 1};
   outline: 1rem solid ${colors.black};
+  transition: opacity .5s ease;
 
   @media (max-width: 750px) {
     outline: none;
   }
 `;
 
-class DateBox extends Component {
-  render() {
-    return (
-      <DateBoxContainer>
-        {this.props.date < 10
-          ? `0${this.props.date}`
-          : this.props.date}
-      </DateBoxContainer>
-    );
-  }
+const DateBox = ({ date, trailerActive }) => {
+  return (
+    <DateBoxContainer trailerActive={trailerActive}>
+      {date < 10
+        ? `0${date}`
+        : date}
+    </DateBoxContainer>
+  );
 }
 
 DateBox.propTypes = {
-  date: PropTypes.number.isRequired
+  date: PropTypes.number.isRequired,
+  trailerActive: PropTypes.bool.isRequired
 };
 
 export default DateBox;

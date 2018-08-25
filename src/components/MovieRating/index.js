@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors, space } from '../../styles/theme';
@@ -13,16 +13,14 @@ const RatingContainer = styled.div`
   text-transform: uppercase;
 `;
 
-class MovieRating extends Component {
-  render() {
-    return (
-      <RatingContainer rating={this.props.rating.toLowerCase()}>
-        <span>
-          {this.props.rating}
-        </span>
-      </RatingContainer>
-    );
-  }
+const MovieRating = ({ rating }) => {
+  return (
+    <RatingContainer rating={rating.toLowerCase()}>
+      <span>
+        {rating}
+      </span>
+    </RatingContainer>
+  );
 }
 
 MovieRating.propTypes = {

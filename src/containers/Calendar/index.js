@@ -30,6 +30,7 @@ class Calendar extends Component {
                   date={movie.date}
                   backdrop={movie.backdrop}
                   services={movie.services}
+                  focus={movie.focus}
                 />
               </LazyLoad>
             );
