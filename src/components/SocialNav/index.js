@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors, space } from '../../styles/theme';
-
-import TwitterLogo from '../../images/services/twitter.jpg';
-import FacebookLogo from '../../images/services/facebook.jpg';
+import { TwitterShareButton, TwitterIcon, FacebookShareButton, FacebookIcon, WhatsappShareButton, WhatsappIcon } from 'react-share';
+import { Firebase } from '../../api';
 import GithubLogo from '../../images/services/github.jpg';
 
 const SocialNavContainer = styled.section`
@@ -20,6 +19,18 @@ const NavList = styled.ul`
 `;
 
 const NavItem = styled.li`
+  cursor: pointer;
+  opacity: .85;
+  transition: opacity .25s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  & svg {
+    display: block;
+  }
+
   &+ li {
     margin-left: ${space.hori};
   }
@@ -30,24 +41,49 @@ const Icon = styled.img.attrs({
   alt: props => props.alt
 })`
   display: block;
-  height: 22px;
-  opacity: .85;
-  transition: opacity .25s ease;
+  height: 24px;
   width: auto;
-
-  &:hover {
-    opacity: 1;
-  }
 `;
+
+const shareUrl = 'https://bit.ly/2wqncxt';
+const shareTitle = '31 Nights of Horror - 2018. 31 Movies for a terrifying October.';
+
+const handleClick = (type) => {
+  Firebase.TrackClick('Share', type);
+};
 
 const SocialNav = () => (
   <SocialNavContainer>
     <NavList>
-      <NavItem>
-        <Icon src={TwitterLogo} alt="Share on Twitter" />
+      <NavItem onClick={() => { handleClick('Twitter'); }}>
+        <TwitterShareButton
+          url={shareUrl}
+          title={shareTitle}
+          hashtags={['31NightsOfHorror']}
+        >
+          <TwitterIcon
+            size={24}
+          />
+        </TwitterShareButton>
       </NavItem>
-      <NavItem>
-        <Icon src={FacebookLogo} alt="Share on Facebook" />
+      <NavItem onClick={() => { handleClick('Facebook'); }}>
+        <FacebookShareButton
+          url={shareUrl}
+          quote={shareTitle}
+        >
+          <FacebookIcon
+            size={24}
+          />
+        </FacebookShareButton>
+      </NavItem>
+      <NavItem onClick={() => { handleClick('WHatsApp'); }}>
+        <WhatsappShareButton
+          url={shareUrl}
+          title={shareTitle}
+          separator=":: "
+        >
+          <WhatsappIcon size={24} />
+        </WhatsappShareButton>
       </NavItem>
       <NavItem>
         <a
@@ -55,6 +91,7 @@ const SocialNav = () => (
           target="_blank"
           rel="noopener noreferrer"
           title="31 Nights of Horror"
+          onClick={() => { handleClick('GitHub'); }}
         >
           <Icon src={GithubLogo} alt="Visit on Github" />
         </a>
