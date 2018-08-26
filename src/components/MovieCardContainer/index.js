@@ -13,19 +13,16 @@ import CloseIcon from '../CloseIcon';
 
 const Container = styled.section`
   background: ${colors.black};
-  box-shadow: 0px 0px 25px 20px rgba(0,0,0,0.75);
+  box-shadow: none;
   color: #fff;
-  grid-area: 4 / 8 / 8 / 15;
+  grid-area: C;
+  outline: 1rem solid ${colors.black};
   padding: ${space.vert} calc(${space.hori} * 2);
   z-index: 2;
 
-  @media (max-width: 750px) {
-    box-shadow: none;
-  }
-
-  @media (max-width: 900px) {
-    background: rgba(0, 0, 0,.9);
-    grid-area: 4 / 5 / 8 / 16;
+  @media (min-width: 750px) {
+    box-shadow: 0px 0px 25px 20px rgba(0,0,0,0.75);
+    outline: none;
   }
 `;
 

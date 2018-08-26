@@ -16,10 +16,6 @@ const DateBoxContainer = styled.div`
   opacity: ${props => props.trailerActive ? '.2' : 1};
   outline: 1rem solid ${colors.black};
   transition: opacity .5s ease;
-
-  @media (max-width: 750px) {
-    outline: none;
-  }
 `;
 
 const DateBox = ({ date, trailerActive }) => {

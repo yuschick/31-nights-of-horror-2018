@@ -17,10 +17,6 @@ const DayBoxContainer = styled.div`
   padding: ${space.default};
   text-transform: uppercase;
   transition: opacity .5s ease;
-
-  @media (max-width: 750px) {
-    outline: none;
-  }
 `;
 
 const DayBox = ({ day, trailerActive }) => {

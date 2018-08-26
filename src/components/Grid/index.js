@@ -10,21 +10,10 @@ import MovieCardContainer from '../MovieCardContainer';
 const Wrapper = styled.div`
   background: ${colors.black};
   display: flex;
-  grid-column-end: span 4;
+  grid-area: D;
   justify-content: space-between;
   outline: 1rem solid ${colors.black};
   position: relative;
-
-  @media (max-width: 750px) {
-    margin-right: .5rem;
-  }
-
-  @media (max-width: 900px) {
-    align-self: flex-end;
-    background: rgba(0, 0, 0,.9);
-    grid-area: 2 / 9 / 2 / 16;
-    outline: .5rem solid rgba(0, 0, 0,.9);
-  }
 `;
 
 const Grid = ({
@@ -39,56 +28,52 @@ const Grid = ({
   toggleTrailer
 }) => {
   return ([
-    <Cell dim={dim} noFade key='cell-1-1' />,
-    <Cell dim={dim} span2area key='cell-1-2' />,
-    <Cell dim={dim} span4col noFade key='cell-1-4' />,
-    <Cell dim={dim} span4col noFade key='cell-1-8' />,
-    <Cell dim={dim} hide noFade key='cell-1-12' />,
-    <Cell dim={dim} span2area noFade key='cell-1-13' />,
-    <Cell dim={dim} span2col noFade key='cell-1-15' />,
-    <Cell dim={dim} span2row delayLG fast key='cell-2-1' />,
-    <Cell dim={dim} delaySM fast key='cell-2-4' />,
-    <Cell dim={dim} focus={focus1} span2col3row delayLG key='cell-2-5' />,
-    <Cell dim={dim} span3col noFade key='cell-2-7' />,
-    <Cell dim={dim} span3col hide noFade key='cell-2-10' />,
-    <Cell dim={dim} hide noFade key='cell-2-15' />,
-    <Cell dim={dim} span3row hide noFade key='cell-2-16' />,
-    <Cell dim={dim} span3col hide noFade key='cell-3-2' />,
-    <Cell dim={dim} noFade key='cell-3-7' />,
-    <Cell dim={dim} span3col noFade key='cell-3-8' />,
-    <Wrapper key='cell-3-11'>
+    <Cell dim={dim} area='a' noFade key='cell-a' />,
+    <Cell dim={dim} area='b' key='cell-b' />,
+    <Cell dim={dim} area='c' noFade key='cell-c' />,
+    <Cell dim={dim} area='d' noFade key='cell-d' />,
+    <Cell dim={dim} area='e' hide noFade key='cell-e' />,
+    <Cell dim={dim} area='f' noFade key='cell-f' />,
+    <Cell dim={dim} area='g' noFade key='cell-g' />,
+    <Cell dim={dim} area='h' delayLG fast key='cell-h' />,
+    <Cell dim={dim} area='i' delaySM fast key='cell-i' />,
+    <Cell dim={dim} area='F1' focus={focus1} delayLG key='cell-F1' />,
+    <Cell dim={dim} area='j' noFade key='cell-j' />,
+    <Cell dim={dim} area='k' hide noFade key='cell-k' />,
+    <Cell dim={dim} area='l' hide noFade key='cell-l' />,
+    <Cell dim={dim} area='m' hide noFade key='cell-m' />,
+    <Cell dim={dim} area='n' hide noFade key='cell-n' />,
+    <Cell dim={dim} area='o' noFade key='cell-o' />,
+    <Cell dim={dim} area='p' noFade key='cell-p' />,
+    <Wrapper key='cell-D'>
       <DayBox trailerActive={trailerActive} day={day} />
       <DateBox trailerActive={trailerActive} date={date} />
     </Wrapper>,
-    <Cell dim={dim} noFade key='cell-3-15' />,
-    <Cell dim={dim} focus={focus2} span4col2row delayMD key='cell-4-1' />,
-    <Cell dim={dim} noFade key='cell-4-9' />,
+    <Cell dim={dim} area='q' noFade hideAt="MD" key='cell-q' />,
+    <Cell dim={dim} area='F2' focus={focus2} delayMD key='cell-F2' />,
     <MovieCardContainer
-      key='cell-4-10'
+      key='cell-C'
       movie={movie}
       trailerActive={trailerActive}
       toggleTrailer={toggleTrailer}
     />,
-    <Cell dim={dim} slow noFade key='cell-4-15' />,
-    <Cell dim={dim} focus={focus3} noFade span3col2row key='cell-5-5' />,
-    <Cell dim={dim} span2col3row noFade key='cell-5-15' />,
-    <Cell dim={dim} span4col noFade key='cell-6-1' />,
-    <Cell dim={dim} span2area noFade key='cell-7-1' />,
-    <Cell dim={dim} hide noFade key='cell-7-3' />,
-    <Cell dim={dim} span3row hide slow key='cell-7-4' />,
-    <Cell dim={dim} flash slow delaySM key='cell-7-5' />,
-    <Cell dim={dim} span2col noFade key='cell-7-6' />,
-    <Cell dim={dim} span2row noFade key='cell-8-3' />,
-    <Cell dim={dim} span4col2row noFade key='cell-8-5' />,
-    <Cell dim={dim} span3col slow delayLG key='cell-8-9' />,
-    <Cell dim={dim} span2area noFade key='cell-8-12' />,
-    <Cell dim={dim} flash fast delayLG key='cell-8-14' />,
-    <Cell dim={dim} span2col hide delaySM key='cell-8-15' />,
-    <Cell dim={dim} noFade key='cell-9-1' />,
-    <Cell dim={dim} hide noFade key='cell-9-2' />,
-    <Cell dim={dim} span3col noFade key='cell-9-9' />,
-    <Cell dim={dim} hide noFade key='cell-9-14' />,
-    <Cell dim={dim} span2col noFade key='cell-9-15' />
+    <Cell dim={dim} area='r' slow noFade hideAt="MD" key='cell-r' />,
+    <Cell dim={dim} area='F3' focus={focus3} noFade key='cell-F3' />,
+    <Cell dim={dim} area='s' noFade key='cell-s' />,
+    <Cell dim={dim} area='t' noFade key='cell-t' />,
+    <Cell dim={dim} area='u' hide noFade key='cell-u' />,
+    <Cell dim={dim} area='v' hide noFade key='cell-v' />,
+    <Cell dim={dim} area='w' hide slow key='cell-w' />,
+    <Cell dim={dim} area='x' flash slow delaySM key='cell-x' />,
+    <Cell dim={dim} area='y' noFade hideAt="MD" key='cell-y' />,
+    <Cell dim={dim} area='z' noFade key='cell-z' />,
+    <Cell dim={dim} area='aa' noFade key='cell-aa' />,
+    <Cell dim={dim} area='bb' slow delayLG key='cell-bb' />,
+    <Cell dim={dim} area='cc' noFade key='cell-cc' />,
+    <Cell dim={dim} area='dd' flash fast delayLG key='cell-dd' />,
+    <Cell dim={dim} area='ee' noFade key='cell-ee' />,
+    <Cell dim={dim} area='ff' noFade key='cell-ff' />,
+    <Cell dim={dim} area='gg' noFade key='cell-gg' />
   ]);
 }
 

@@ -9,27 +9,56 @@ import { GetMovieDetails } from '../../api';
 import LoadingScreen from '../../components/LoadingScreen';
 import Grid from '../../components/Grid';
 
-const GridContainer = styled.section.attrs({
+const NewGridContainer = styled.section.attrs({
   id: props => props.id
 })`
   background: url(${props => props.backdrop}) center;
   background-size: cover;
   display: ${props => props.loading || props.preloading ? 'block' : 'grid'};
   grid-gap: 1rem;
-  grid-template-columns: .5fr .75fr repeat(13, 1fr) .75fr;
-  grid-template-rows: repeat(2, 1fr) .65fr repeat(3, 1fr) 1.25fr repeat(2, 1fr);
+  grid-template-areas:
+      ". . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . ."
+      ". . . . . . . . . . . . . . . ."
+      ". D D D D D D D D D D D D D D ."
+      ". C C C C C C C C C C C C C C ."
+      ". C C C C C C C C C C C C C C ."
+      ". C C C C C C C C C C C C C C ."
+      ". . . . . . . . . . . . . . . .";
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(4, 1fr) .65fr repeat(3, 1fr) .5fr;
   min-height: calc(100vh - ${size.headerHeight});
+  overflow hidden;
   position: relative;
   width: 100%;
 
-  @media (max-width: 750px) {
-    align-content: center;
-    align-items: center;
-    background-position: -100px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 100%;
+  @media (min-width: 750px) {
+    grid-template-areas:
+      "a  b  b  c  c  c  c  d  d  d  d  e  f  f  g  g"
+      "h  b  b  i  F1 j  j  j  j  k  k  k  f  f  l  m"
+      "h  n  n  n  F1 o  o  p  p  p  D  D  D  D  D  m"
+      "F2 F2 F2 F2 F1 C  C  C  C  C  C  C  C  C  C  s"
+      "F2 F2 F2 F2 F3 C  C  C  C  C  C  C  C  C  C  s"
+      "t  t  t  t  F3 C  C  C  C  C  C  C  C  C  C  s"
+      "u  u  v  w  x  C  C  C  C  C  C  C  C  C  C  s"
+      "u  u  z  w  aa aa aa aa bb bb bb cc cc dd ee ee"
+      "ff ff z  w  aa aa aa aa gg gg gg cc cc dd ee ee";
+    grid-template-columns: .5fr .75fr repeat(13, 1fr) .75fr;
+    grid-template-rows: repeat(2, 1fr) .65fr repeat(3, 1fr) 1.25fr repeat(2, 1fr);
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-areas:
+      "a  b  b  c  c  c  c  d  d  d  d  e  f  f  g  g"
+      "h  b  b  i  F1 F1 j  j  j  k  k  k  f  f  l  m"
+      "h  n  n  n  F1 F1 o  p  p  p  D  D  D  D  q  m"
+      "F2 F2 F2 F2 F1 F1 r  C  C  C  C  C  C  C  s  s"
+      "F2 F2 F2 F2 F3 F3 F3 C  C  C  C  C  C  C  s  s"
+      "t  t  t  t  F3 F3 F3 C  C  C  C  C  C  C  s  s"
+      "u  u  v  w  x  y  y  C  C  C  C  C  C  C  s  s"
+      "u  u  z  w  aa aa aa aa bb bb bb cc cc dd ee ee"
+      "ff ff z  w  aa aa aa aa gg gg gg cc cc dd ee ee";
   }
 `;
 
@@ -42,7 +71,7 @@ class MovieScreen extends Component {
       preloading: true,
       trailerActive: false,
       movie: {},
-      testing: true
+      testing: false
     };
 
     this.toggleTrailer = this.toggleTrailer.bind(this);
@@ -97,7 +126,7 @@ class MovieScreen extends Component {
 
   render() {
     return (
-      <GridContainer
+      <NewGridContainer
         id={`movie-${this.props.date}`}
         loading={this.state.loading}
         preloading={this.state.preloading}
@@ -117,7 +146,7 @@ class MovieScreen extends Component {
             focus3={this.props.focus === 3}
           />
         }
-      </GridContainer>
+      </NewGridContainer>
     );
   }
 }

@@ -9,7 +9,10 @@
 - [X] Define all movie focus locations in data
 - [X] Convert components to Stateless where a full Class is not needed
 - [X] Look at ensuring CSS animations are disabled after the grid is lost
+- [X] Update the sharing and track those clicks as well
+- [X] Fix dim cells at all breakpoints
 - [ ] Look into having a smaller version of backdrops for mobile
+- [ ] Revisit iPhone views and grid layout for them
 - [ ] Update Tracking data file with final movie selections
 - [ ] Add streaming links
 - [ ] Write tests

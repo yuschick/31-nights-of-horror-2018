@@ -9,7 +9,7 @@ import Logo from '../../svg/logo.svg';
 
 const HeaderContainer = styled.header`
   background: ${colors.black};
-  height: ${size.headerHeight};
+  min-height: ${size.headerHeight};
   padding: ${space.default};
   position: sticky;
   top: 0;
@@ -19,8 +19,13 @@ const HeaderContainer = styled.header`
 const HeaderContent = styled(ContentContainer)`
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
+
+  @media (min-width: 500px) {
+    justify-content: space-between;
+  }
 `;
 
 const LogoImage = styled.img.attrs({
