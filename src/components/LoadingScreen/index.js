@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import LoadingSkull from '../../svg/skull.svg';
+import { Stabbing, StabbingFlipped } from '../../utils/Animations';
+import LoadingStab from '../../svg/stab.svg';
 
 const Container = styled.div`
   align-content: center;
@@ -11,16 +12,26 @@ const Container = styled.div`
 `;
 
 const Image = styled.img.attrs({
-  src: LoadingSkull,
+  src: LoadingStab,
   alt: 'Loading'
 })`
+  animation: ${Stabbing} .35s ease infinite alternate;
   height: auto;
-  width: 150px;
+  opacity: .6;
+  transform-origin: left center;
+  width: 100px;
+
+  ${props => props.flipped && `
+    animation: ${StabbingFlipped} .35s ease infinite alternate;
+    margin-left: 4rem;
+    transform: scaleX(-1);
+  `};
 `;
 
 const LoadingScreen = () => (
   <Container>
     <Image />
+    <Image flipped />
   </Container>
 );
 
