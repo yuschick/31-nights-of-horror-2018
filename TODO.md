@@ -11,6 +11,8 @@
 - [X] Look at ensuring CSS animations are disabled after the grid is lost
 - [X] Update the sharing and track those clicks as well
 - [X] Fix dim cells at all breakpoints
+- [X] Add Instgram link
+- [ ] Add functionality to forward to current day
 - [ ] Look into having a smaller version of backdrops for mobile
 - [ ] Revisit iPhone views and grid layout for them
 - [ ] Update Tracking data file with final movie selections

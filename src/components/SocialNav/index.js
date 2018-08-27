@@ -4,6 +4,7 @@ import { colors, space } from '../../styles/theme';
 import { TwitterShareButton, TwitterIcon, FacebookShareButton, FacebookIcon, WhatsappShareButton, WhatsappIcon } from 'react-share';
 import { Firebase } from '../../api';
 import GithubLogo from '../../images/services/github.jpg';
+import InstagramLogo from '../../images/services/instagram.jpg';
 
 const SocialNavContainer = styled.section`
   background: ${colors.black};
@@ -84,6 +85,17 @@ const SocialNav = () => (
         >
           <WhatsappIcon size={24} />
         </WhatsappShareButton>
+      </NavItem>
+      <NavItem>
+        <a
+          href="https://instagram.com/31_nights_of_horror"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="31 Nights of Horror"
+          onClick={() => { handleClick('Instagram'); }}
+        >
+          <Icon src={InstagramLogo} alt="Follow on Instagram" />
+        </a>
       </NavItem>
       <NavItem>
         <a
