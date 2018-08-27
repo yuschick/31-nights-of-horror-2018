@@ -25,9 +25,11 @@ const NewGridContainer = styled.section.attrs({
   grid-template-rows: 2rem 40px fit-content(50%) auto;
   margin-bottom: 2rem;
   min-height: calc(100vh - ${size.headerHeight});
+  opacity: ${props => props.loading || props.preloading ? 0 : 1};
   overflow hidden;
   padding-bottom: 2rem;
   position: relative;
+  transition: opacity 1s ease;
   width: 100%;
 
   @media (min-width: 750px) {
@@ -138,7 +140,7 @@ class MovieScreen extends PureComponent {
             day={this.props.day}
             date={this.props.date}
             movie={this.state.movie}
-            dim={this.state.testing || this.state.trailerActive}
+            dim={this.state.testing || this.state.trailerActive || !this.props.inView}
             trailerActive={this.state.trailerActive}
             toggleTrailer={this.toggleTrailer}
             focus1={this.props.focus === 1}
@@ -164,7 +166,8 @@ MovieScreen.propTypes = {
     youtube: PropTypes.string,
     amazon: PropTypes.string,
     imdb: PropTypes.string
-  }).isRequired
+  }).isRequired,
+  inView: PropTypes.bool.isRequired
 }
 
 export default MovieScreen;

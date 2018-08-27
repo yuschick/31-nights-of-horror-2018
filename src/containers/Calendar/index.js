@@ -9,7 +9,31 @@ import MovieScreen from '../MovieScreen';
 class Calendar extends Component {
   constructor() {
     super();
+    this.state = {
+      inView: true
+    };
+
     Firebase.init();
+  }
+
+  componentDidMount() {
+    window.addEventListener('focus', () => {
+      this.setState({ inView: true });
+    });
+
+    window.addEventListener('blur', () => {
+      this.setState({ inView: false });
+    });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('focus', () => {
+      this.setState({ inView: true });
+    });
+
+    window.removeEventListener('blur', () => {
+      this.setState({ inView: false });
+    });
   }
 
   detectInnerWidth() {
@@ -35,6 +59,7 @@ class Calendar extends Component {
                   backdrop={this.detectInnerWidth() ? movie.backdropSM : movie.backdrop}
                   services={movie.services}
                   focus={movie.focus}
+                  inView={this.state.inView}
                 />
               </LazyLoad>
             );
