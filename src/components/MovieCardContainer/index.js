@@ -12,15 +12,16 @@ import MovieTrailer from '../MovieTrailer';
 import CloseIcon from '../CloseIcon';
 
 const Container = styled.section`
-  background: ${colors.black};
+  background: rgba(0,0,0,.85);
   box-shadow: none;
   color: #fff;
   grid-area: C;
-  outline: 1rem solid ${colors.black};
+  outline: 1rem solid rgba(0,0,0,.85);
   padding: ${space.vert} calc(${space.hori} * 2);
   z-index: 2;
 
   @media (min-width: 750px) {
+    background: ${colors.black};
     box-shadow: 0px 0px 25px 20px rgba(0,0,0,0.75);
     outline: none;
   }

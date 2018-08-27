@@ -17,19 +17,16 @@ const NewGridContainer = styled.section.attrs({
   display: ${props => props.loading || props.preloading ? 'block' : 'grid'};
   grid-gap: 1rem;
   grid-template-areas:
-      ". . . . . . . . . . . . . . . ."
-      ". . . . . . . . . . . . . . . ."
-      ". . . . . . . . . . . . . . . ."
-      ". . . . . . . . . . . . . . . ."
-      ". D D D D D D D D D D D D D D ."
-      ". C C C C C C C C C C C C C C ."
-      ". C C C C C C C C C C C C C C ."
-      ". C C C C C C C C C C C C C C ."
-      ". . . . . . . . . . . . . . . .";
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(4, 1fr) .65fr repeat(3, 1fr) .5fr;
+      ". . ."
+      ". D ."
+      ". C ."
+      ". . .";
+  grid-template-columns: auto fit-content(90%) auto;
+  grid-template-rows: 2rem 40px fit-content(50%) auto;
+  margin-bottom: 2rem;
   min-height: calc(100vh - ${size.headerHeight});
   overflow hidden;
+  padding-bottom: 2rem;
   position: relative;
   width: 100%;
 

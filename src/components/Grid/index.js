@@ -7,7 +7,7 @@ import DayBox from '../DayBox';
 import DateBox from '../DateBox';
 import MovieCardContainer from '../MovieCardContainer';
 
-const Wrapper = styled.div`
+const DayWrapper = styled.div`
   background: ${colors.black};
   display: flex;
   grid-area: D;
@@ -28,6 +28,19 @@ const Grid = ({
   toggleTrailer
 }) => {
   return ([
+    <DayWrapper key='cell-D'>
+      <DayBox trailerActive={trailerActive} day={day} />
+      <DateBox trailerActive={trailerActive} date={date} />
+    </DayWrapper>,
+    <MovieCardContainer
+      key='cell-C'
+      movie={movie}
+      trailerActive={trailerActive}
+      toggleTrailer={toggleTrailer}
+    />,
+    <Cell dim={dim} area='F1' focus={focus1} delayLG key='cell-F1' />,
+    <Cell dim={dim} area='F2' focus={focus2} delayXL key='cell-F2' />,
+    <Cell dim={dim} area='F3' focus={focus3} noFade key='cell-F3' />,
     <Cell dim={dim} area='a' noFade key='cell-a' />,
     <Cell dim={dim} area='b' key='cell-b' />,
     <Cell dim={dim} area='c' noFade key='cell-c' />,
@@ -37,7 +50,6 @@ const Grid = ({
     <Cell dim={dim} area='g' noFade key='cell-g' />,
     <Cell dim={dim} area='h' delayLG fast key='cell-h' />,
     <Cell dim={dim} area='i' delaySM fast key='cell-i' />,
-    <Cell dim={dim} area='F1' focus={focus1} delayLG key='cell-F1' />,
     <Cell dim={dim} area='j' noFade key='cell-j' />,
     <Cell dim={dim} area='k' hide noFade key='cell-k' />,
     <Cell dim={dim} area='l' hide noFade key='cell-l' />,
@@ -45,20 +57,8 @@ const Grid = ({
     <Cell dim={dim} area='n' hide noFade key='cell-n' />,
     <Cell dim={dim} area='o' noFade key='cell-o' />,
     <Cell dim={dim} area='p' noFade key='cell-p' />,
-    <Wrapper key='cell-D'>
-      <DayBox trailerActive={trailerActive} day={day} />
-      <DateBox trailerActive={trailerActive} date={date} />
-    </Wrapper>,
     <Cell dim={dim} area='q' noFade hideAt="MD" key='cell-q' />,
-    <Cell dim={dim} area='F2' focus={focus2} delayMD key='cell-F2' />,
-    <MovieCardContainer
-      key='cell-C'
-      movie={movie}
-      trailerActive={trailerActive}
-      toggleTrailer={toggleTrailer}
-    />,
     <Cell dim={dim} area='r' slow noFade hideAt="MD" key='cell-r' />,
-    <Cell dim={dim} area='F3' focus={focus3} noFade key='cell-F3' />,
     <Cell dim={dim} area='s' noFade key='cell-s' />,
     <Cell dim={dim} area='t' noFade key='cell-t' />,
     <Cell dim={dim} area='u' hide noFade key='cell-u' />,
