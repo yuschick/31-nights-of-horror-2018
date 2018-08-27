@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { size } from '../../styles/theme';
+import { colors, size } from '../../styles/theme';
 import { Find } from '../../utils';
 import { GetMovieDetails } from '../../api';
 
@@ -12,7 +12,7 @@ import Grid from '../../components/Grid';
 const NewGridContainer = styled.section.attrs({
   id: props => props.id
 })`
-  background: url(${props => props.backdrop}) center;
+  background: url(${props => props.backdrop}) top left;
   background-size: cover;
   display: ${props => props.loading || props.preloading ? 'block' : 'grid'};
   grid-gap: 1rem;
@@ -31,6 +31,7 @@ const NewGridContainer = styled.section.attrs({
   width: 100%;
 
   @media (min-width: 750px) {
+    border-bottom: 1rem solid ${colors.black};
     grid-template-areas:
       "a  b  b  c  c  c  c  d  d  d  d  e  f  f  g  g"
       "h  b  b  i  F1 j  j  j  j  k  k  k  f  f  l  m"
@@ -43,6 +44,8 @@ const NewGridContainer = styled.section.attrs({
       "ff ff z  w  aa aa aa aa gg gg gg cc cc dd ee ee";
     grid-template-columns: .5fr .75fr repeat(13, 1fr) .75fr;
     grid-template-rows: repeat(2, 1fr) .65fr repeat(3, 1fr) 1.25fr repeat(2, 1fr);
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   @media (min-width: 1000px) {
@@ -59,7 +62,7 @@ const NewGridContainer = styled.section.attrs({
   }
 `;
 
-class MovieScreen extends Component {
+class MovieScreen extends PureComponent {
   constructor() {
     super();
 

@@ -1,4 +1,5 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
 const keys = {
   tmdb: '84d2690223f00a8cc05141e0c91c56b8',

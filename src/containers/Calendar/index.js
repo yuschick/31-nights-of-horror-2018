@@ -12,6 +12,10 @@ class Calendar extends Component {
     Firebase.init();
   }
 
+  detectInnerWidth() {
+    return window.innerWidth <= 750;
+  }
+
   render() {
     return (
       <div>
@@ -28,7 +32,7 @@ class Calendar extends Component {
                   id={movie.movieId}
                   day={movie.day}
                   date={movie.date}
-                  backdrop={movie.backdrop}
+                  backdrop={this.detectInnerWidth() ? movie.backdropSM : movie.backdrop}
                   services={movie.services}
                   focus={movie.focus}
                 />

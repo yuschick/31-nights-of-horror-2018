@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {space} from '../../styles/theme';
@@ -14,6 +14,12 @@ import YoutubeIcon from '../../images/services/youtube.jpg';
 const ListContainer = styled.ul`
   display: flex;
   height: 35px;
+  opacity: 1;
+  transition: opacity .5s ease;
+
+  ${props => props.dim && `
+    opacity: 0;
+  `};
 `;
 
 const ListItem = styled.li`
@@ -28,14 +34,14 @@ const ListItem = styled.li`
   }
 `;
 
-class MovieServices extends Component {
+class MovieServices extends PureComponent {
   handleClick(service) {
     Firebase.TrackClick(this.props.title, service);
   }
 
   render() {
     return (
-      <ListContainer>
+      <ListContainer dim={this.props.dim}>
         {this.props.services.imdb
           ? <ListItem>
             <a
@@ -113,6 +119,7 @@ class MovieServices extends Component {
 }
 
 MovieServices.propTypes = {
+  dim: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   services: PropTypes.shape({
     netflix: PropTypes.string,

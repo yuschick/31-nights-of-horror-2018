@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Firebase } from '../../api';
@@ -77,7 +77,7 @@ const TrailerButton = styled.button`
   }
 `;
 
-class MovieDetailsBar extends Component {
+class MovieDetailsBar extends PureComponent {
   handleClick() {
     this.props.toggleTrailer();
     Firebase.TrackClick(this.props.title, 'trailer');

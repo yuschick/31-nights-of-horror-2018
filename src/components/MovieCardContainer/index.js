@@ -81,7 +81,11 @@ const MovieCardContainer = ({
           </main>
         </ArticleContainer>
         <CardFooter>
-          <MovieServices title={movie.title} services={movie.services}/>
+          <MovieServices
+            dim={trailerActive}
+            title={movie.title}
+            services={movie.services}
+          />
           {
             trailerActive
               ? <CloseIcon toggleTrailer={toggleTrailer} />
