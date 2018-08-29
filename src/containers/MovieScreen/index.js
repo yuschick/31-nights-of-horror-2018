@@ -25,7 +25,7 @@ const NewGridContainer = styled.section.attrs({
   grid-template-rows: 2rem 40px fit-content(50%) auto;
   margin-bottom: 2rem;
   min-height: calc(100vh - ${size.headerHeight});
-  opacity: ${props => props.loading || props.preloading ? 0 : 1};
+  opacity: ${props => props.loading || props.preloading ? 0.5 : 1};
   overflow hidden;
   padding-bottom: 2rem;
   position: relative;

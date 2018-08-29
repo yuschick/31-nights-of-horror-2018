@@ -4,7 +4,7 @@ import { Stabbing, StabbingFlipped } from '../../utils/Animations';
 import LoadingStab from '../../svg/stab.svg';
 
 const Container = styled.div`
-  align-content: center;
+  align-items: center;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -17,13 +17,12 @@ const Image = styled.img.attrs({
 })`
   animation: ${Stabbing} .35s ease infinite alternate;
   height: auto;
-  opacity: .6;
   transform-origin: left center;
   width: 100px;
 
   ${props => props.flipped && `
     animation: ${StabbingFlipped} .35s ease infinite alternate;
-    margin-left: 4rem;
+    margin-left: 0rem;
     transform: scaleX(-1);
   `};
 `;
