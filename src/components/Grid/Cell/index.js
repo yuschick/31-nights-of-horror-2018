@@ -6,7 +6,7 @@ import { FadeIn, FadeOut, Flash } from '../../../utils/Animations.js';
 
 const GridCell = styled.div`
   animation: ${FadeOut} ${times.base} ease infinite alternate;
-  background: rgba(0,0,0,.15);
+  background: rgba(0,0,0,.1);
   grid-area: ${props => props.area};
   outline: 1rem solid ${colors.black};
   transition: background 1s ease;
