@@ -23,7 +23,7 @@ Need horror movie recommendations this October? Check out my fourth annual 31 Ni
 - Child's Play
 - Maniac
 - House of 1000 Corpses
-- Tragedy Girls
+- Pontypool
 - The House at the End of Time
 - Zombie
 - The Girl Next Door
@@ -33,14 +33,14 @@ Need horror movie recommendations this October? Check out my fourth annual 31 Ni
 - Life
 - Session 9
 - The Girl with all the Gifts
-- Wolf Creek
+- Ravenous
 - Saw
 - Pumpkinhead
 - Terrifier
 - The Beyond
 - Oujia: Origin of Evil
 - Train to Busan
-- The Exorcism of Emily Rose
+- Wolf Creek
 - Annabelle Creation
 - Ghost Stories
 - Hell House LLC

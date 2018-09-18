@@ -17,4 +17,3 @@
 - [X] Look into having a smaller version of backdrops for mobile
 - [ ] Update Tracking data file with final movie selections
 - [ ] Add streaming links
-- [ ] Write tests

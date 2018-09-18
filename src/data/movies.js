@@ -6,7 +6,7 @@ import TheAmityvilleHorror from '../images/backdrops/the-amityville-horror.jpg';
 import ChildsPlay from '../images/backdrops/childs-play.jpg';
 import Maniac from '../images/backdrops/maniac.jpg';
 import HouseOf1000Corpses from '../images/backdrops/house-of-1000-corpses.jpg';
-import TragedyGirls from '../images/backdrops/tragedy-girls.jpg';
+import Pontypool from '../images/backdrops/pontypool.jpg';
 import TheHouseAtTheEndOfTime from '../images/backdrops/the-house-at-the-end-of-time.jpg';
 import Zombie from '../images/backdrops/zombie.jpg';
 import TheGirlNextDoor from '../images/backdrops/the-girl-next-door.jpg';
@@ -23,7 +23,7 @@ import Terrifier from '../images/backdrops/terrifier.jpg';
 import TheBeyond from '../images/backdrops/the-beyond.jpg';
 import OuijaOriginOfEvil from '../images/backdrops/origin-of-evil.jpg';
 import TrainToBusan from '../images/backdrops/train-to-busan.jpg';
-import EmilyRose from '../images/backdrops/the-exorcism-of-emily-rose.jpg';
+import Ravenous from '../images/backdrops/ravenous.jpg';
 import AnnabelleCreation from '../images/backdrops/annabelle-creation.jpg';
 import GhostStories from '../images/backdrops/ghost-stories.jpg';
 import HellHouseLLC from '../images/backdrops/hell-house-llc.jpg';
@@ -38,7 +38,7 @@ import TheAmityvilleHorrorSM from '../images/backdrops/the-amityville-horror-sm.
 import ChildsPlaySM from '../images/backdrops/childs-play-sm.jpg';
 import ManiacSM from '../images/backdrops/maniac-sm.jpg';
 import HouseOf1000CorpsesSM from '../images/backdrops/house-of-1000-corpses-sm.jpg';
-import TragedyGirlsSM from '../images/backdrops/tragedy-girls-sm.jpg';
+import PontypoolSM from '../images/backdrops/pontypool-sm.jpg';
 import TheHouseAtTheEndOfTimeSM from '../images/backdrops/the-house-at-the-end-of-time-sm.jpg';
 import ZombieSM from '../images/backdrops/zombie-sm.jpg';
 import TheGirlNextDoorSM from '../images/backdrops/the-girl-next-door-sm.jpg';
@@ -55,7 +55,7 @@ import TerrifierSM from '../images/backdrops/terrifier-sm.jpg';
 import TheBeyondSM from '../images/backdrops/the-beyond-sm.jpg';
 import OuijaOriginOfEvilSM from '../images/backdrops/origin-of-evil-sm.jpg';
 import TrainToBusanSM from '../images/backdrops/train-to-busan-sm.jpg';
-import EmilyRoseSM from '../images/backdrops/the-exorcism-of-emily-rose-sm.jpg';
+import RavenousSM from '../images/backdrops/ravenous-sm.jpg';
 import AnnabelleCreationSM from '../images/backdrops/annabelle-creation-sm.jpg';
 import GhostStoriesSM from '../images/backdrops/ghost-stories-sm.jpg';
 import HellHouseLLCSM from '../images/backdrops/hell-house-llc-sm.jpg';
@@ -147,13 +147,13 @@ export const movies = Immutable.from([
     }
   },
   {
-    title: 'Tragedy Girls',
+    title: 'Pontypool',
     date: 6,
     day: Days.SATURDAY,
-    backdrop: TragedyGirls,
-    backdropSM: TragedyGirlsSM,
-    movieId: 413857,
-    focus: 1,
+    backdrop: Pontypool,
+    backdropSM: PontypoolSM,
+    movieId: 23963,
+    focus: 3,
     services: {
       netflix: '',
       hulu: '',
@@ -307,12 +307,12 @@ export const movies = Immutable.from([
     }
   },
   {
-    title: 'Wolf Creek',
+    title: 'Ravenouse',
     date: 16,
     day: Days.TUESDAY,
-    backdrop: WolfCreek,
-    backdropSM: WolfCreekSM,
-    movieId: 9885,
+    backdrop: Ravenous,
+    backdropSM: RavenousSM,
+    movieId: 10212,
     focus: 3,
     services: {
       netflix: '',
@@ -419,12 +419,12 @@ export const movies = Immutable.from([
     }
   },
   {
-    title: 'The Exorcism of Emily Rose',
+    title: 'Wolf Creek',
     date: 23,
     day: Days.TUESDAY,
-    backdrop: EmilyRose,
-    backdropSM: EmilyRoseSM,
-    movieId: 8643,
+    backdrop: WolfCreek,
+    backdropSM: WolfCreekSM,
+    movieId: 9885,
     focus: 1,
     services: {
       netflix: '',
