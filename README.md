@@ -23,21 +23,21 @@ Need horror movie recommendations this October? Check out my fourth annual 31 Ni
 - Child's Play
 - Maniac
 - House of 1000 Corpses
-- Pontypool
+- Split
 - The House at the End of Time
-- Zombie
+- The Girl with all the Gifts
 - The Girl Next Door
 - Dead Silence
 - Hidden
 - It
 - Life
 - Session 9
-- The Girl with all the Gifts
+- The Beyond
 - Ravenous
 - Saw
 - Pumpkinhead
 - Terrifier
-- The Beyond
+- Stir of Echoes
 - Oujia: Origin of Evil
 - Train to Busan
 - Wolf Creek

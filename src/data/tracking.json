@@ -8,6 +8,7 @@
     "Twitter": 0,
     "Facebook": 0,
     "WhatsApp": 0,
+    "Instagram": 0,
     "GitHub": 0
   },
   "Dawn of the Dead": {
@@ -46,7 +47,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Clown": {
+  "House of 1000 Corpses": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -55,7 +56,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Tragedy Girls": {
+  "Split": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -73,7 +74,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Zombie": {
+  "The Girl with All the Gifts": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -91,7 +92,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Puppet Master": {
+  "Dead Silence": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -100,7 +101,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "The Void": {
+  "Hidden": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -109,7 +110,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "The House by the Cemetery": {
+  "It": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -127,7 +128,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "The Barn": {
+  "Session 9": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -136,7 +137,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "The Girl With All the Gifts": {
+  "The Beyond": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -145,7 +146,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Wolf Creek": {
+  "Ravenous": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -154,7 +155,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Dead Silence": {
+  "Saw": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -181,7 +182,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "The Beyond": {
+  "Stir of Echoes": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -190,7 +191,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Oujia: Origin of Evil": {
+  "Ouija: Origin of Evil": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -208,7 +209,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "The Strangers": {
+  "Wolf Creek": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -217,7 +218,16 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Annabelle Creation": {
+  "Annabelle: Creation": {
+    "netflix": 0,
+    "hulu": 0,
+    "shudder": 0,
+    "amazon": 0,
+    "youtube": 0,
+    "imdb": 0,
+    "trailer": 0
+  },
+  "Ghost Stories": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -235,7 +245,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Hereditary": {
+  "A Quiet Place": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -244,7 +254,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "A Quiet Place": {
+  "Hereditary": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,
@@ -271,7 +281,7 @@
     "imdb": 0,
     "trailer": 0
   },
-  "Incident in a Ghostland": {
+  "Ghostland": {
     "netflix": 0,
     "hulu": 0,
     "shudder": 0,

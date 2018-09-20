@@ -6,9 +6,8 @@ import TheAmityvilleHorror from '../images/backdrops/the-amityville-horror.jpg';
 import ChildsPlay from '../images/backdrops/childs-play.jpg';
 import Maniac from '../images/backdrops/maniac.jpg';
 import HouseOf1000Corpses from '../images/backdrops/house-of-1000-corpses.jpg';
-import Pontypool from '../images/backdrops/pontypool.jpg';
+import Split from '../images/backdrops/split.jpg';
 import TheHouseAtTheEndOfTime from '../images/backdrops/the-house-at-the-end-of-time.jpg';
-import Zombie from '../images/backdrops/zombie.jpg';
 import TheGirlNextDoor from '../images/backdrops/the-girl-next-door.jpg';
 import Saw from '../images/backdrops/saw.jpg';
 import Hidden from '../images/backdrops/hidden.jpg';
@@ -32,15 +31,15 @@ import AQuietPlace from '../images/backdrops/a-quiet-place.jpg';
 import DaysLater28 from '../images/backdrops/28-days-later.jpg';
 import Veronica from '../images/backdrops/veronica.jpg';
 import Ghostland from '../images/backdrops/ghostland.jpg';
+import StirOfEchoes from '../images/backdrops/stir-of-echoes.jpg';
 
 import DawnOfTheDeadSM from '../images/backdrops/dawn-of-the-dead-sm.jpg';
 import TheAmityvilleHorrorSM from '../images/backdrops/the-amityville-horror-sm.jpg';
 import ChildsPlaySM from '../images/backdrops/childs-play-sm.jpg';
 import ManiacSM from '../images/backdrops/maniac-sm.jpg';
 import HouseOf1000CorpsesSM from '../images/backdrops/house-of-1000-corpses-sm.jpg';
-import PontypoolSM from '../images/backdrops/pontypool-sm.jpg';
+import SplitSM from '../images/backdrops/split-sm.jpg';
 import TheHouseAtTheEndOfTimeSM from '../images/backdrops/the-house-at-the-end-of-time-sm.jpg';
-import ZombieSM from '../images/backdrops/zombie-sm.jpg';
 import TheGirlNextDoorSM from '../images/backdrops/the-girl-next-door-sm.jpg';
 import SawSM from '../images/backdrops/saw-sm.jpg';
 import HiddenSM from '../images/backdrops/hidden-sm.jpg';
@@ -64,6 +63,7 @@ import AQuietPlaceSM from '../images/backdrops/a-quiet-place-sm.jpg';
 import DaysLater28SM from '../images/backdrops/28-days-later-sm.jpg';
 import VeronicaSM from '../images/backdrops/veronica-sm.jpg';
 import GhostlandSM from '../images/backdrops/ghostland-sm.jpg';
+import StirOfEchoesSM from '../images/backdrops/stir-of-echoes-sm.jpg';
 
 export const movies = Immutable.from([
   {
@@ -137,7 +137,7 @@ export const movies = Immutable.from([
     backdrop: HouseOf1000Corpses,
     backdropSM: HouseOf1000CorpsesSM,
     movieId: 2662,
-    focus: 1,
+    focus: 3,
     services: {
       netflix: '',
       hulu: '',
@@ -147,13 +147,13 @@ export const movies = Immutable.from([
     }
   },
   {
-    title: 'Pontypool',
+    title: 'Split',
     date: 6,
     day: Days.SATURDAY,
-    backdrop: Pontypool,
-    backdropSM: PontypoolSM,
-    movieId: 23963,
-    focus: 3,
+    backdrop: Split,
+    backdropSM: SplitSM,
+    movieId: 381288,
+    focus: 1,
     services: {
       netflix: '',
       hulu: '',
@@ -179,13 +179,13 @@ export const movies = Immutable.from([
     }
   },
   {
-    title: 'Zombie',
-    date: 8,
+    title: 'The Girl With All the Gifts',
+    date: 6,
     day: Days.MONDAY,
-    backdrop: Zombie,
-    backdropSM: ZombieSM,
-    movieId: 7219,
-    focus: 1,
+    backdrop: TheGirlWithAllTheGifts,
+    backdropSM: TheGirlWithAllTheGiftsSM,
+    movieId: 375366,
+    focus: 2,
     services: {
       netflix: '',
       hulu: '',
@@ -291,13 +291,13 @@ export const movies = Immutable.from([
     }
   },
   {
-    title: 'The Girl With All the Gifts',
+    title: 'The Beyond',
     date: 15,
     day: Days.MONDAY,
-    backdrop: TheGirlWithAllTheGifts,
-    backdropSM: TheGirlWithAllTheGiftsSM,
-    movieId: 375366,
-    focus: 2,
+    backdrop: TheBeyond,
+    backdropSM: TheBeyondSM,
+    movieId: 19204,
+    focus: 1,
     services: {
       netflix: '',
       hulu: '',
@@ -371,13 +371,13 @@ export const movies = Immutable.from([
     }
   },
   {
-    title: 'The Beyond',
+    title: 'Stir of Echoes',
     date: 20,
     day: Days.SATURDAY,
-    backdrop: TheBeyond,
-    backdropSM: TheBeyondSM,
-    movieId: 19204,
-    focus: 1,
+    backdrop: StirOfEchoes,
+    backdropSM: StirOfEchoesSM,
+    movieId: 11601,
+    focus: 3,
     services: {
       netflix: '',
       hulu: '',

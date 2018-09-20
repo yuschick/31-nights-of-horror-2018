@@ -67,17 +67,25 @@ const SocialNav = () => (
           />
         </TwitterShareButton>
       </NavItem>
-      <NavItem onClick={() => { handleClick('Facebook'); }}>
-        <FacebookShareButton
-          url={shareUrl}
-          quote={shareTitle}
+      <NavItem>
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fyuschick.github.io%2F31-Nights-of-Horror-2018&amp;src=sdkpreparse"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="31 Nights of Horror"
+          onClick={() => { handleClick('Facebook'); }}
         >
-          <FacebookIcon
-            size={24}
-          />
-        </FacebookShareButton>
+          <FacebookShareButton
+            url={shareUrl}
+            quote={shareTitle}
+          >
+            <FacebookIcon
+              size={24}
+            />
+          </FacebookShareButton>
+        </a>
       </NavItem>
-      <NavItem onClick={() => { handleClick('WHatsApp'); }}>
+      <NavItem onClick={() => { handleClick('WhatsApp'); }}>
         <WhatsappShareButton
           url={shareUrl}
           title={shareTitle}
