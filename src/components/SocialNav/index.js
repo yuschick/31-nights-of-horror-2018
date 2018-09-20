@@ -47,7 +47,7 @@ const Icon = styled.img.attrs({
 `;
 
 const shareUrl = 'https://bit.ly/2wqncxt';
-const shareTitle = '31 Nights of Horror - 2018. 31 Movies for a terrifying October.';
+const shareTitle = '31 Nights of Horror 2018. 31 Movies for a terrifying October.';
 
 const handleClick = (type) => {
   Firebase.TrackClick('Share', type);
