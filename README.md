@@ -5,7 +5,7 @@ It's no secret that I have an incredible love for horror movies. The **31 Nights
 ### 2018 Summary
 Need horror movie recommendations this October? Check out my fourth annual 31 Nights of Horror calendar. Enjoy the month-long themes like *Monday of the Dead* and *True Story Tuesday*, inline movie trailers, and links to streaming services where you can watch now; many for free! I have an incredible love for horror movies and I look forward to building this project every year. **Happy Halloween!**
 
-[![31 Nights of Horror 2018](http://yuschick.github.io/31-Nights-of-Horror-2018/images/screenshot.gif)](http://yuschick.github.io/31-Nights-of-Horror-2018)  
+[![31 Nights of Horror 2018](https://raw.githubusercontent.com/yuschick/31-Nights-of-Horror-2018/master/src/images/screenshot.gif)](http://yuschick.github.io/31-Nights-of-Horror-2018)  
 
 ### All Calendars
 [View the 2015 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2015/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2015)  
