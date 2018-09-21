@@ -58,6 +58,7 @@ Need horror movie recommendations this October? Check out my fourth annual 31 Ni
 - Firebase
 - ESLint
 - The Movie DB
+- JustWatch
 
 ## Contact:
 [@Yuschick](http://www.twitter.com/yuschick)

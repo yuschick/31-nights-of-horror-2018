@@ -8,11 +8,10 @@ const keys = {
 
 export const Firebase = {
   TrackClick(movie, type) {
-    console.log(movie);
     let data;
     firebase.database().ref(`${movie}`).once('value').then(res => {
       data = res.val();
-      data[type]++;
+      data[type] ? data[type]++ : data[type] = 1;
 
       firebase.database().ref(`${movie}`).set(data);
     });

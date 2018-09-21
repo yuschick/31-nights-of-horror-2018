@@ -16,3 +16,5 @@ export const Find = (source, field, target) => {
     return item[field] === target;
   });
 };
+
+export const SupportedProviders = Immutable.from([8, 9, 10, 15, 2, 207, 43, 37, 31, 99, 185]);

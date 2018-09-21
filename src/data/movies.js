@@ -73,13 +73,14 @@ export const movies = Immutable.from([
     backdrop: DawnOfTheDead,
     backdropSM: DawnOfTheDeadSM,
     movieId: 923,
+    jwId: 16957,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=jV_xEwb0ZiQ'
     }
   },
   {
@@ -89,12 +90,13 @@ export const movies = Immutable.from([
     backdrop: TheAmityvilleHorror,
     backdropSM: TheAmityvilleHorrorSM,
     movieId: 11449,
+    jwId: 70020,
     focus: 1,
     services: {
       netflix: '',
-      hulu: '',
+      // hulu: 'https://www.hulu.com/movie/the-amityville-horror-f1b7dfea-6678-49a7-8e45-758e8bad119e',
       shudder: '',
-      amazon: '',
+      amazon: 'https://www.amazon.com/dp/B001NV3ZVG',
       youtube: ''
     }
   },
@@ -105,13 +107,14 @@ export const movies = Immutable.from([
     backdrop: ChildsPlay,
     backdropSM: ChildsPlaySM,
     movieId: 10585,
+    jwId: 60248,
     focus: 3,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B000IZ21BS',
+      youtube: 'https://www.youtube.com/watch?v=QDqSIsuRDxc'
     }
   },
   {
@@ -121,12 +124,13 @@ export const movies = Immutable.from([
     backdrop: Maniac,
     backdropSM: ManiacSM,
     movieId: 103620,
+    jwId: 167066,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
+      amazon: 'https://www.amazon.com/dp/B00F7H1SDY',
       youtube: ''
     }
   },
@@ -137,13 +141,14 @@ export const movies = Immutable.from([
     backdrop: HouseOf1000Corpses,
     backdropSM: HouseOf1000CorpsesSM,
     movieId: 2662,
+    jwId: 129616,
     focus: 3,
     services: {
       netflix: '',
       hulu: '',
-      shudder: '',
-      amazon: '',
-      youtube: ''
+      // shudder: 'https://www.shudder.com/movies/watch/house-of-1000-corpses/2445663',
+      // amazon: 'https://www.amazon.com/dp/B000JNQ1HE',
+      youtube: 'https://www.youtube.com/watch?v=Kg6-E2KNOso'
     }
   },
   {
@@ -153,13 +158,14 @@ export const movies = Immutable.from([
     backdrop: Split,
     backdropSM: SplitSM,
     movieId: 381288,
+    jwId: 236706,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B01MYFLG5H',
+      youtube: 'https://www.youtube.com/watch?v=fRXxlS48pkQ'
     }
   },
   {
@@ -169,12 +175,13 @@ export const movies = Immutable.from([
     backdrop: TheHouseAtTheEndOfTime,
     backdropSM: TheHouseAtTheEndOfTimeSM,
     movieId: 207686,
+    jwId: 171108,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
+      // amazon: 'https://www.amazon.com/dp/B00O7HNDLU',
       youtube: ''
     }
   },
@@ -185,13 +192,14 @@ export const movies = Immutable.from([
     backdrop: TheGirlWithAllTheGifts,
     backdropSM: TheGirlWithAllTheGiftsSM,
     movieId: 375366,
+    jwId: 244535,
     focus: 2,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      // amazon: 'https://www.amazon.com/dp/B06VXZJ4CJ',
+      youtube: 'https://www.youtube.com/watch?v=odLorGwE9EQ'
     }
   },
   {
@@ -201,6 +209,7 @@ export const movies = Immutable.from([
     backdrop: TheGirlNextDoor,
     backdropSM: TheGirlNextDoorSM,
     movieId: 15356,
+    jwId: 78067,
     focus: 3,
     services: {
       netflix: '',
@@ -217,12 +226,13 @@ export const movies = Immutable.from([
     backdrop: DeadSilence,
     backdropSM: DeadSilenceSM,
     movieId: 14001,
+    jwId: 72167,
     focus: 2,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
+      // amazon: 'https://www.amazon.com/dp/B000T2NATC',
       youtube: ''
     }
   },
@@ -233,13 +243,14 @@ export const movies = Immutable.from([
     backdrop: Hidden,
     backdropSM: HiddenSM,
     movieId: 360784,
+    jwId: 225920,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      // amazon: 'https://www.amazon.com/dp/B0143H1RHU',
+      youtube: 'https://www.youtube.com/watch?v=bZI0j94LRhg'
     }
   },
   {
@@ -249,13 +260,14 @@ export const movies = Immutable.from([
     backdrop: It,
     backdropSM: ItSM,
     movieId: 346364,
+    jwId: 244208,
     focus: 3,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      // amazon: 'https://www.amazon.com/dp/B0756VMDV5',
+      youtube: 'https://www.youtube.com/watch?v=NKYqOT2xMGE'
     }
   },
   {
@@ -265,13 +277,14 @@ export const movies = Immutable.from([
     backdrop: Life,
     backdropSM: LifeSM,
     movieId: 395992,
+    jwId: 244205,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=7csml5A7Ciw'
     }
   },
   {
@@ -281,6 +294,7 @@ export const movies = Immutable.from([
     backdrop: Session9,
     backdropSM: Session9SM,
     movieId: 10972,
+    jwId: 34071,
     focus: 1,
     services: {
       netflix: '',
@@ -297,6 +311,7 @@ export const movies = Immutable.from([
     backdrop: TheBeyond,
     backdropSM: TheBeyondSM,
     movieId: 19204,
+    jwId: 126123,
     focus: 1,
     services: {
       netflix: '',
@@ -313,13 +328,14 @@ export const movies = Immutable.from([
     backdrop: Ravenous,
     backdropSM: RavenousSM,
     movieId: 10212,
+    jwId: 60255,
     focus: 3,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=WkPCOeY5aW0'
     }
   },
   {
@@ -329,13 +345,14 @@ export const movies = Immutable.from([
     backdrop: Saw,
     backdropSM: SawSM,
     movieId: 176,
+    jwId: 79923,
     focus: 3,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=Rvf_PfVd7dU'
     }
   },
   {
@@ -345,13 +362,14 @@ export const movies = Immutable.from([
     backdrop: Pumpkinhead,
     backdropSM: PumpkinheadSM,
     movieId: 26515,
+    jwId: 49887,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=7YR9xq5ZWzI'
     }
   },
   {
@@ -361,6 +379,7 @@ export const movies = Immutable.from([
     backdrop: Terrifier,
     backdropSM: TerrifierSM,
     movieId: 420634,
+    jwId: 271367,
     focus: 3,
     services: {
       netflix: '',
@@ -377,13 +396,14 @@ export const movies = Immutable.from([
     backdrop: StirOfEchoes,
     backdropSM: StirOfEchoesSM,
     movieId: 11601,
+    jwId: 49083,
     focus: 3,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=8NC0S8fDlJo'
     }
   },
   {
@@ -393,13 +413,14 @@ export const movies = Immutable.from([
     backdrop: OuijaOriginOfEvil,
     backdropSM: OuijaOriginOfEvilSM,
     movieId: 335796,
+    jwId: 206698,
     focus: 3,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=yLV2deHatsw'
     }
   },
   {
@@ -409,13 +430,14 @@ export const movies = Immutable.from([
     backdrop: TrainToBusan,
     backdropSM: TrainToBusanSM,
     movieId: 396535,
+    jwId: 243955,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=Dpm5fvZJtaA'
     }
   },
   {
@@ -425,6 +447,7 @@ export const movies = Immutable.from([
     backdrop: WolfCreek,
     backdropSM: WolfCreekSM,
     movieId: 9885,
+    jwId: 176743,
     focus: 1,
     services: {
       netflix: '',
@@ -441,13 +464,14 @@ export const movies = Immutable.from([
     backdrop: AnnabelleCreation,
     backdropSM: AnnabelleCreationSM,
     movieId: 396422,
+    jwId: 244192,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=jkQ9khXS65s'
     }
   },
   {
@@ -457,6 +481,7 @@ export const movies = Immutable.from([
     backdrop: GhostStories,
     backdropSM: GhostStoriesSM,
     movieId: 429417,
+    jwId: 335630,
     focus: 3,
     services: {
       netflix: '',
@@ -473,6 +498,7 @@ export const movies = Immutable.from([
     backdrop: HellHouseLLC,
     backdropSM: HellHouseLLCSM,
     movieId: 359246,
+    jwId: 224498,
     focus: 1,
     services: {
       netflix: '',
@@ -489,13 +515,14 @@ export const movies = Immutable.from([
     backdrop: AQuietPlace,
     backdropSM: AQuietPlaceSM,
     movieId: 447332,
+    jwId: 312979,
     focus: 3,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=A31oH-EN9dU'
     }
   },
   {
@@ -505,6 +532,7 @@ export const movies = Immutable.from([
     backdrop: Hereditary,
     backdropSM: HereditarySM,
     movieId: 493922,
+    jwId: 364165,
     focus: 1,
     services: {
       netflix: '',
@@ -521,13 +549,14 @@ export const movies = Immutable.from([
     backdrop: DaysLater28,
     backdropSM: DaysLater28SM,
     movieId: 170,
+    jwId: 110638,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=xL7CMLz3PTo'
     }
   },
   {
@@ -537,13 +566,14 @@ export const movies = Immutable.from([
     backdrop: Veronica,
     backdropSM: VeronicaSM,
     movieId: 441701,
+    jwId: 313683,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=Pv-UkJ3y5dE'
     }
   },
   {
@@ -553,13 +583,14 @@ export const movies = Immutable.from([
     backdrop: Ghostland,
     backdropSM: GhostlandSM,
     movieId: 476299,
+    jwId: 350379,
     focus: 1,
     services: {
       netflix: '',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=lkCg4MiVcvQ'
     }
   }
 ]);
