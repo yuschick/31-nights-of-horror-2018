@@ -113,7 +113,8 @@ MovieCardContainer.propTypes = {
       shudder: PropTypes.string,
       youtube: PropTypes.string,
       amazon: PropTypes.string,
-      imdb: PropTypes.string
+      imdb: PropTypes.string,
+      itunes: PropTypes.string
     }).isRequired
   }).isRequired,
   trailerActive: PropTypes.bool.isRequired,

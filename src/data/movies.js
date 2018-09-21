@@ -79,7 +79,7 @@ export const movies = Immutable.from([
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=jV_xEwb0ZiQ'
     }
   },
   {
@@ -92,9 +92,9 @@ export const movies = Immutable.from([
     focus: 1,
     services: {
       netflix: '',
-      hulu: '',
+      hulu: 'https://www.hulu.com/movie/the-amityville-horror-f1b7dfea-6678-49a7-8e45-758e8bad119e',
       shudder: '',
-      amazon: '',
+      amazon: 'https://www.amazon.com/dp/B001NV3ZVG',
       youtube: ''
     }
   },
@@ -110,8 +110,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B000IZ21BS',
+      youtube: 'https://www.youtube.com/watch?v=QDqSIsuRDxc',
+      itunes: 'https://itunes.apple.com/us/movie/childs-play/id220251867?uo=4&at=1000l3V2'
     }
   },
   {
@@ -126,8 +127,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B00F7H1SDY',
+      youtube: '',
+      itunes: 'https://itunes.apple.com/us/movie/maniac/id658109926?uo=4&at=1000l3V2'
     }
   },
   {
@@ -142,8 +144,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B000JNQ1HE',
+      youtube: 'https://www.youtube.com/watch?v=Kg6-E2KNOso',
+      itunes: 'https://itunes.apple.com/us/movie/house-of-1000-corpses/id219953731?uo=4&at=1000l3V2'
     }
   },
   {
@@ -158,8 +161,8 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B01MYFLG5H',
+      youtube: 'https://www.youtube.com/watch?v=fRXxlS48pkQ'
     }
   },
   {
@@ -174,7 +177,7 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
+      amazon: 'https://www.amazon.com/dp/B00O7HNDLU',
       youtube: ''
     }
   },
@@ -190,8 +193,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B06VXZJ4CJ',
+      youtube: 'https://www.youtube.com/watch?v=odLorGwE9EQ',
+      itunes: 'https://itunes.apple.com/us/movie/the-girl-with-all-the-gifts/id1199019294?uo=4&at=1000l3V2'
     }
   },
   {
@@ -222,8 +226,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B000T2NATC',
+      youtube: '',
+      itunes: 'https://itunes.apple.com/us/movie/dead-silence-unrated-2007/id315045965?uo=4&at=1000l3V2'
     }
   },
   {
@@ -238,8 +243,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B0143H1RHU',
+      youtube: 'https://www.youtube.com/watch?v=bZI0j94LRhg',
+      itunes: 'https://itunes.apple.com/us/movie/hidden/id1030976725?uo=4&at=1000l3V2'
     }
   },
   {
@@ -254,8 +260,8 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/dp/B0756VMDV5',
+      youtube: 'https://www.youtube.com/watch?v=NKYqOT2xMGE'
     }
   },
   {
@@ -271,7 +277,7 @@ export const movies = Immutable.from([
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=7csml5A7Ciw'
     }
   },
   {
@@ -301,8 +307,8 @@ export const movies = Immutable.from([
     services: {
       netflix: '',
       hulu: '',
-      shudder: '',
-      amazon: '',
+      shudder: 'https://www.shudder.com/watch/the-beyond/2325608/1',
+      amazon: 'https://www.amazon.com/gp/product/B075KMR3W8?camp=1789&creativeASIN=B075KMR3W8&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
       youtube: ''
     }
   },
@@ -318,8 +324,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B000I9U8K0?camp=1789&creativeASIN=B000I9U8K0&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: 'https://www.youtube.com/watch?v=WkPCOeY5aW0',
+      itunes: 'https://itunes.apple.com/us/movie/ravenous/id280626622?uo=4&at=1000l3V2'
     }
   },
   {
@@ -334,8 +341,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B000XSEPYQ?camp=1789&creativeASIN=B000XSEPYQ&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: 'https://www.youtube.com/watch?v=Rvf_PfVd7dU',
+      itunes: 'https://itunes.apple.com/us/movie/saw/id265727087?uo=4&at=1000l3V2'
     }
   },
   {
@@ -348,10 +356,11 @@ export const movies = Immutable.from([
     focus: 1,
     services: {
       netflix: '',
-      hulu: '',
+      hulu: 'http://www.hulu.com/watch/15153',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B000VEPL4U?camp=1789&creativeASIN=B000VEPL4U&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: 'https://www.youtube.com/watch?v=7YR9xq5ZWzI',
+      itunes: 'https://itunes.apple.com/us/movie/pumpkinhead/id258692590?uo=4&at=1000l3V2'
     }
   },
   {
@@ -363,11 +372,12 @@ export const movies = Immutable.from([
     movieId: 420634,
     focus: 3,
     services: {
-      netflix: '',
+      netflix: 'http://www.netflix.com/title/81004223',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: '',
+      itunes: 'https://itunes.apple.com/us/movie/terrifier/id1343789417?uo=4&at=1000l3V2'
     }
   },
   {
@@ -380,10 +390,11 @@ export const movies = Immutable.from([
     focus: 3,
     services: {
       netflix: '',
-      hulu: '',
+      hulu: 'http://www.hulu.com/watch/795802',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B07G1YV6HD?camp=1789&creativeASIN=B07G1YV6HD&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: 'https://www.youtube.com/watch?v=8NC0S8fDlJo',
+      itunes: 'https://itunes.apple.com/us/movie/stir-of-echoes/id265725786?uo=4&at=1000l3V2'
     }
   },
   {
@@ -399,7 +410,7 @@ export const movies = Immutable.from([
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=yLV2deHatsw'
     }
   },
   {
@@ -411,11 +422,12 @@ export const movies = Immutable.from([
     movieId: 396535,
     focus: 1,
     services: {
-      netflix: '',
+      netflix: 'http://www.netflix.com/title/80117824',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B01N2POCJX?camp=1789&creativeASIN=B01N2POCJX&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: 'https://www.youtube.com/watch?v=Dpm5fvZJtaA',
+      itunes: 'https://itunes.apple.com/us/movie/train-to-busan/id1163982660?uo=4&at=1000l3V2'
     }
   },
   {
@@ -430,8 +442,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B002HU5KII?camp=1789&creativeASIN=B002HU5KII&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: '',
+      itunes: 'https://itunes.apple.com/us/movie/wolf-creek/id307017019?uo=4&at=1000l3V2'
     }
   },
   {
@@ -447,7 +460,7 @@ export const movies = Immutable.from([
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=jkQ9khXS65s'
     }
   },
   {
@@ -462,8 +475,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B07FKXYPX3?camp=1789&creativeASIN=B07FKXYPX3&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: '',
+      itunes: 'https://itunes.apple.com/us/movie/ghost-stories/id1401813378?uo=4&at=1000l3V2'
     }
   },
   {
@@ -478,8 +492,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B01LYLJBQF?camp=1789&creativeASIN=B01LYLJBQF&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: '',
+      itunes: 'https://itunes.apple.com/us/movie/hell-house-llc/id1150208694?uo=4&at=1000l3V2'
     }
   },
   {
@@ -494,8 +509,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B07BZ2YYPF?camp=1789&creativeASIN=B07BZ2YYPF&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: 'https://www.youtube.com/watch?v=A31oH-EN9dU',
+      itunes: 'https://itunes.apple.com/us/movie/a-quiet-place/id1356850151?uo=4&at=1000l3V2'
     }
   },
   {
@@ -510,8 +526,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B07DHYZF7H?camp=1789&creativeASIN=B07DHYZF7H&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: '',
+      itunes: 'https://itunes.apple.com/us/movie/hereditary/id1382447562?uo=4&at=1000l3V2'
     }
   },
   {
@@ -526,8 +543,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B00C4QIFBO?camp=1789&creativeASIN=B00C4QIFBO&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: 'https://www.youtube.com/watch?v=xL7CMLz3PTo',
+      itunes: 'https://itunes.apple.com/us/movie/28-days-later/id569220589?uo=4&at=1000l3V2'
     }
   },
   {
@@ -539,11 +557,11 @@ export const movies = Immutable.from([
     movieId: 441701,
     focus: 1,
     services: {
-      netflix: '',
+      netflix: 'http://www.netflix.com/title/80109295',
       hulu: '',
       shudder: '',
       amazon: '',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=Pv-UkJ3y5dE'
     }
   },
   {
@@ -558,8 +576,9 @@ export const movies = Immutable.from([
       netflix: '',
       hulu: '',
       shudder: '',
-      amazon: '',
-      youtube: ''
+      amazon: 'https://www.amazon.com/gp/product/B07DPW8VP1?camp=1789&creativeASIN=B07DPW8VP1&ie=UTF8&linkCode=xm2&tag=justwatch09-20',
+      youtube: 'https://www.youtube.com/watch?v=lkCg4MiVcvQ',
+      itunes: 'https://itunes.apple.com/us/movie/incident-in-a-ghostland/id1389640628?uo=4&at=1000l3V2'
     }
   }
 ]);

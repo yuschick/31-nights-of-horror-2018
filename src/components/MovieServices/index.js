@@ -10,6 +10,7 @@ import ShudderIcon from '../../images/services/shudder.jpg';
 import HuluIcon from '../../images/services/hulu.jpg';
 import AmazonIcon from '../../images/services/amazon.jpg';
 import YoutubeIcon from '../../images/services/youtube.jpg';
+import ITunesIcon from '../../images/services/itunes.jpg';
 
 const ListContainer = styled.ul`
   display: flex;
@@ -78,6 +79,18 @@ class MovieServices extends PureComponent {
           : null
         }
 
+        {this.props.services.itunes
+          ? <ListItem>
+            <a
+              href={this.props.services.itunes}
+              onClick={() => { this.handleClick('itunes'); }}
+            >
+              <img src={ITunesIcon} alt="Watch now on iTunes"/>
+            </a>
+          </ListItem>
+          : null
+        }
+
         {this.props.services.youtube
           ? <ListItem>
             <a
@@ -127,7 +140,8 @@ MovieServices.propTypes = {
     shudder: PropTypes.string,
     youtube: PropTypes.string,
     amazon: PropTypes.string,
-    imdb: PropTypes.string
+    imdb: PropTypes.string,
+    itunes: PropTypes.string
   }).isRequired
 };
 
