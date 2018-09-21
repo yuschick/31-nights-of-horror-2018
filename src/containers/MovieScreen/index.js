@@ -116,6 +116,7 @@ class MovieScreen extends PureComponent {
         language: language.name,
         score: data.vote_average,
         trailer: trailer.key,
+        jwId: this.props.jwId,
         services: {
           ...this.props.services,
           imdb: data.imdb_id
@@ -146,6 +147,7 @@ class MovieScreen extends PureComponent {
             focus1={this.props.focus === 1}
             focus2={this.props.focus === 2}
             focus3={this.props.focus === 3}
+            providers={this.props.providers}
           />
         }
       </NewGridContainer>
@@ -155,6 +157,7 @@ class MovieScreen extends PureComponent {
 
 MovieScreen.propTypes = {
   id: PropTypes.number.isRequired,
+  jwId: PropTypes.number.isRequired,
   day: PropTypes.string.isRequired,
   date: PropTypes.number.isRequired,
   backdrop: PropTypes.string.isRequired,
@@ -167,7 +170,8 @@ MovieScreen.propTypes = {
     amazon: PropTypes.string,
     imdb: PropTypes.string
   }).isRequired,
-  inView: PropTypes.bool.isRequired
+  inView: PropTypes.bool.isRequired,
+  providers: PropTypes.array
 }
 
 export default MovieScreen;

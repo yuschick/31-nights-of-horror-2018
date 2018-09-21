@@ -5,18 +5,29 @@ import { Firebase } from '../../api';
 import Header from '../../components/Header';
 import { movies } from '../../data/movies';
 import MovieScreen from '../MovieScreen';
+import JustWatch from 'justwatch-api';
+import { SupportedProviders } from '../../utils';
+const jw = new JustWatch();
 
 class Calendar extends Component {
   constructor() {
     super();
     this.state = {
-      inView: true
+      inView: true,
+      providers: []
     };
 
     Firebase.init();
   }
 
   componentDidMount() {
+    Promise.resolve(jw.getProviders()).then(res => {
+      const filtered = res.filter(item => {
+        return SupportedProviders.includes(item.id);
+      })
+      this.setState({ providers: filtered });
+    });
+
     window.addEventListener('focus', () => {
       this.setState({ inView: true });
     });
@@ -54,12 +65,14 @@ class Calendar extends Component {
               >
                 <MovieScreen
                   id={movie.movieId}
+                  jwId={movie.jwId}
                   day={movie.day}
                   date={movie.date}
                   backdrop={this.detectInnerWidth() ? movie.backdropSM : movie.backdrop}
                   services={movie.services}
                   focus={movie.focus}
                   inView={this.state.inView}
+                  providers={this.state.providers}
                 />
               </LazyLoad>
             );

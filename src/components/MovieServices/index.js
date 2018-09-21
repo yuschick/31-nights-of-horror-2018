@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {space} from '../../styles/theme';
 import { Firebase } from '../../api';
+import JustWatch from 'justwatch-api';
 
 import IMDBIcon from '../../images/services/imdb.jpg';
-import NetflixIcon from '../../images/services/netflix.jpg';
-import ShudderIcon from '../../images/services/shudder.jpg';
-import HuluIcon from '../../images/services/hulu.jpg';
-import AmazonIcon from '../../images/services/amazon.jpg';
 import YoutubeIcon from '../../images/services/youtube.jpg';
+import { SupportedProviders, Find } from '../../utils';
+const jw = new JustWatch();
 
 const ListContainer = styled.ul`
   display: flex;
@@ -35,6 +34,29 @@ const ListItem = styled.li`
 `;
 
 class MovieServices extends PureComponent {
+  constructor() {
+    super();
+
+    this.state = {
+      services: null
+    };
+  }
+
+  componentDidMount() {
+    Promise.resolve(jw.getTitle('movie', this.props.jwId)).then(res => {
+      const services = res.offers ? res.offers.filter(item => {
+        return (item.monetization_type === 'flatrate' || item.monetization_type === 'rent') &&
+          item.presentation_type === 'hd' &&
+          SupportedProviders.includes(item.provider_id);
+      })
+        : null;
+
+      this.setState({ services });
+    }).catch(err => {
+      console.log(err);
+    });
+  }
+
   handleClick(service) {
     Firebase.TrackClick(this.props.title, service);
   }
@@ -54,28 +76,24 @@ class MovieServices extends PureComponent {
           : null
         }
 
-        {this.props.services.netflix
-          ? <ListItem>
-            <a
-              href={this.props.services.netflix}
-              onClick={() => { this.handleClick('netflix'); }}
-            >
-              <img src={NetflixIcon} alt="Watch now on Netflix"/>
-            </a>
-          </ListItem>
-          : null
-        }
-
-        {this.props.services.shudder
-          ? <ListItem>
-            <a
-              href={this.props.services.shudder}
-              onClick={() => { this.handleClick('shudder'); }}
-            >
-              <img src={ShudderIcon} alt="Watch now on Shudder"/>
-            </a>
-          </ListItem>
-          : null
+        {
+          this.state.services && this.state.services.map(item => {
+            let itemProvider = Find(this.props.providers, 'id', item.provider_id);
+            let iconId = itemProvider.icon_url.split('/')[2];
+            return (
+              <ListItem key={`${this.props.title}-${item.provider_id}`}>
+                <a
+                  href={item.urls.standard_web || item.urls[0]}
+                  onClick={() => { this.handleClick(itemProvider.technical_name); }}
+                >
+                  <img
+                    src={`https://images.justwatch.com/icon/${iconId}/s50/${itemProvider.technical_name}`}
+                    alt={`Watch now on ${itemProvider.clear_name}`}
+                  />
+                </a>
+              </ListItem>
+            );
+          })
         }
 
         {this.props.services.youtube
@@ -89,30 +107,6 @@ class MovieServices extends PureComponent {
           </ListItem>
           : null
         }
-
-        {this.props.services.amazon
-          ? <ListItem>
-            <a
-              href={this.props.services.amazon}
-              onClick={() => { this.handleClick('amazon'); }}
-            >
-              <img src={AmazonIcon} alt="Watch now on Amazon"/>
-            </a>
-          </ListItem>
-          : null
-        }
-
-        {this.props.services.hulu
-          ? <ListItem>
-            <a
-              href={this.props.services.hulu}
-              onClick={() => { this.handleClick('hulu'); }}
-            >
-              <img src={HuluIcon} alt="Watch now on Hulu"/>
-            </a>
-          </ListItem>
-          : null
-        }
       </ListContainer>
     );
   }
@@ -121,6 +115,7 @@ class MovieServices extends PureComponent {
 MovieServices.propTypes = {
   dim: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
+  jwId: PropTypes.number,
   services: PropTypes.shape({
     netflix: PropTypes.string,
     hulu: PropTypes.string,
@@ -128,7 +123,8 @@ MovieServices.propTypes = {
     youtube: PropTypes.string,
     amazon: PropTypes.string,
     imdb: PropTypes.string
-  }).isRequired
+  }).isRequired,
+  providers: PropTypes.array.isRequired
 };
 
 export default MovieServices;

@@ -53,7 +53,8 @@ const CardFooter = styled.footer`
 const MovieCardContainer = ({
   movie,
   trailerActive,
-  toggleTrailer
+  toggleTrailer,
+  providers
 }) => {
   return (
     <Container>
@@ -85,6 +86,8 @@ const MovieCardContainer = ({
             dim={trailerActive}
             title={movie.title}
             services={movie.services}
+            providers={providers}
+            jwId={movie.jwId}
           />
           {
             trailerActive
@@ -106,6 +109,7 @@ MovieCardContainer.propTypes = {
     language: PropTypes.string.isRequired,
     rating: PropTypes.string.isRequired,
     score: PropTypes.number.isRequired,
+    jwId: PropTypes.number.isRequired,
     trailer: PropTypes.string.isRequired,
     services: PropTypes.shape({
       netflix: PropTypes.string,
@@ -117,7 +121,8 @@ MovieCardContainer.propTypes = {
     }).isRequired
   }).isRequired,
   trailerActive: PropTypes.bool.isRequired,
-  toggleTrailer: PropTypes.func.isRequired
+  toggleTrailer: PropTypes.func.isRequired,
+  providers: PropTypes.array
 }
 
 export default MovieCardContainer;

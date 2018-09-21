@@ -25,7 +25,8 @@ const Grid = ({
   focus2,
   focus3,
   trailerActive,
-  toggleTrailer
+  toggleTrailer,
+  providers
 }) => {
   return ([
     <DayWrapper key='cell-D'>
@@ -37,6 +38,7 @@ const Grid = ({
       movie={movie}
       trailerActive={trailerActive}
       toggleTrailer={toggleTrailer}
+      providers={providers}
     />,
     <Cell dim={dim} area='F1' focus={focus1} delayLG key='cell-F1' />,
     <Cell dim={dim} area='F2' focus={focus2} delayXL key='cell-F2' />,
@@ -103,7 +105,8 @@ Grid.propTypes = {
   focus2: PropTypes.bool,
   focus3: PropTypes.bool,
   trailerActive: PropTypes.bool.isRequired,
-  toggleTrailer: PropTypes.func.isRequired
+  toggleTrailer: PropTypes.func.isRequired,
+  providers: PropTypes.array
 }
 
 export default Grid;
