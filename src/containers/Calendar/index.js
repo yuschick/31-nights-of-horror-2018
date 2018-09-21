@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import LazyLoad from 'react-lazyload';
-import { Firebase } from '../../api';
+import { Firebase, JustWatch } from '../../api';
 
 import Header from '../../components/Header';
 import { movies } from '../../data/movies';
 import MovieScreen from '../MovieScreen';
-import JustWatch from 'justwatch-api';
 import { SupportedProviders } from '../../utils';
 const jw = new JustWatch();
 

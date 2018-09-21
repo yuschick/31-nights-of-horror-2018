@@ -2,8 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {space} from '../../styles/theme';
-import { Firebase } from '../../api';
-import JustWatch from 'justwatch-api';
+import { Firebase, JustWatch } from '../../api';
 
 import IMDBIcon from '../../images/services/imdb.jpg';
 import YoutubeIcon from '../../images/services/youtube.jpg';
