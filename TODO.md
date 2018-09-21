@@ -15,5 +15,5 @@
 - [X] Revisit iPhone views and grid layout for them
 - [?] Add functionality to forward to current day
 - [X] Look into having a smaller version of backdrops for mobile
-- [ ] Update Tracking data file with final movie selections
-- [ ] Add streaming links
+- [X] Update Tracking data file with final movie selections
+- [X] Add streaming links
