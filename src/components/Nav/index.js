@@ -11,7 +11,7 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   align-self: center;
-  color: ${lighten(0.1, colors.tertiary)};
+  color: ${lighten(0.1, colors.lightGrey)};
   font: 1.5rem/1 ${fonts.raleway};
   padding: 0 ${space.hori};
 
@@ -25,7 +25,7 @@ const NavItem = styled.li`
     transition: color .25s ease;
 
     &:hover {
-      color: ${lighten(0.2, colors.tertiary)};
+      color: ${lighten(0.2, colors.lightGrey)};
     }
   }
 `;
